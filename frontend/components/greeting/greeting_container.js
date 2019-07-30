@@ -12,7 +12,7 @@ const mapStateToProps = ({ session, entities: { users } }) => {
 const mapDispatchToProps = dispatch => {
   return({
     logout: () => dispatch(logout()),
-  })
+  });
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Greeting);

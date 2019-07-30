@@ -20,17 +20,18 @@ class SessionForm extends React.Component {
     this.props.processForm(user).then(() => this.props.history.push("/"));
   }
 
-  renderErrors() {
-    let errors = this.props.errors.map((error, idx) => {
-      return <li key={`error-${idx}`}>{error}</li>
-    });
+  // renderErrors() {
+  //   debugger
+  //   let errors = this.props.errors.map((error, idx) => {
+  //     return <li key={`error-${idx}`}>{error}</li>
+  //   });
 
-    return (
-      <ul>
-        {errors}
-      </ul>
-    );
-  }
+  //   return (
+  //     <ul>
+  //       {errors}
+  //     </ul>
+  //   );
+  // }
 
   render() {
     return (
@@ -39,17 +40,27 @@ class SessionForm extends React.Component {
           Welcome to Median!
           <br />
           Please {this.props.formType} or {this.props.navLink}
-          {this.renderErrors()}
+          {/* {this.renderErrors()} */}
 
           <div className="login-form">
             <br />
+
             <label>Full Name:
-              <input type="text" value={this.state.fullname} onChange={this.update('fullname')} className="login-input"/>
+              <input type="text" value={this.state.fullname} onChange={this.update('fullname')} className="login-input" required/>
             </label>
+
             <br />
-            <label>Password:
-              <input type="password" value={this.state.password} onChange={this.update('password')} className="login-input"/>
+
+            <label>Email:
+              <input type="text" value={this.state.email} onChange={this.update('email')} className="login-input" required/>
             </label>
+
+            <br />
+
+            <label>Password:
+              <input type="password" value={this.state.password} onChange={this.update('password')} className="login-input" required/>
+            </label>
+
             <br />
             <input className="session-submit" type="submit" value={this.props.formType}/>
           </div>
