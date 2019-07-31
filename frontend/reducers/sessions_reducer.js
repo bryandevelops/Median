@@ -1,4 +1,5 @@
 import { RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER, } from '../actions/sessions_actions';
+import merge from 'lodash/merge';
 
 const _nullUser = Object.freeze({ id: null });
 
