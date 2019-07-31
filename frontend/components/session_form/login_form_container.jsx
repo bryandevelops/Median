@@ -9,6 +9,9 @@ const mapStateToProps = ({ errors }) => {
   return {
     errors: errors.sessions,
     formType: 'Log in',
+    formHeading: "Welcome back.",
+    formDescription: "Sign in to get personalized story recommendations, follow authors and topics you love, and interact with stories.",
+    formFooter: "Already have an account?",
   };
 };
 
@@ -16,7 +19,7 @@ const mapDispatchToProps = dispatch => {
   return {
     processForm: (user) => dispatch(login(user)),
     otherForm: (
-      <button onClick={() => dispatch(openModal('Sign up'))}>
+      <button className="small-footer-link" onClick={() => dispatch(openModal('Sign up'))}>
         Signup
       </button>
     ),
