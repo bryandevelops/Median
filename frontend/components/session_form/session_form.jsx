@@ -17,7 +17,7 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user).then(() => this.props.history.push("/"));
+    this.props.processForm(user).then(this.props.closeModal);
   }
 
   renderErrors() {
@@ -45,7 +45,7 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="login-form-box">
           Welcome to Median!
           <br />
-          Please {this.props.formType} or {this.props.navLink}
+          Please {this.props.formType} or {this.props.otherForm}
           {this.renderErrors()}
 
           <div className="login-form">
@@ -64,7 +64,7 @@ class SessionForm extends React.Component {
             </label>
 
             <br />
-            <input className="session-submit" type="submit" value={this.props.formType}/>
+            <input className="sessions-submit" type="submit" value={this.props.formType}/>
           </div>
         </form>
       </div>

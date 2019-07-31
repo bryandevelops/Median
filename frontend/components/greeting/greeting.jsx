@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Greeting = ({ currentUser, logout }) => {
+const Greeting = ({ currentUser, logout, openModal }) => {
   const loggedOut = () => (
     <nav className="login-signup">
-      <Link to="/login">Log in</Link>
+      <button onClick={() => openModal('Log in')}>Login</button>
       &nbsp;&nbsp;
-      <Link to="/signup">Sign up</Link>
+      <button onClick={() => openModal('Sign up')}>Signup</button>
     </nav>
   );
 
