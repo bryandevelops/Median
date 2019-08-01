@@ -1,10 +1,10 @@
 .header-logo {
   font-family: 'Playfair Display', serif; 
-    color: rgba(0,0,0,.84)!important;
-    fill: rgba(0,0,0,.84)!important;
-    font-size: 1.9em;
-    font-style: normal;
-    font-weight: 600;
+  color: rgba(0,0,0,.84)!important;
+  fill: rgba(0,0,0,.84)!important;
+  font-size: 1.9em;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .header {
@@ -92,16 +92,20 @@
 .nav-login:hover {
   border-color: #018d68;
   color: #018d68;
+  cursor: pointer;
 }
 
 .nav-signup:hover {
   border-color: #018d68;
   color: #018d68;
+  cursor: pointer;
+  
 }
 
 .nav-logout:hover {
   border-color: #018d68;
   color: #018d68;
+  cursor: pointer;
 }
 
 .profile-pic {
@@ -109,4 +113,27 @@
   border-radius: 50%;
   border-top: 1px solid #03a87c;
   border-bottom: 1px solid #03a87c;
+}
+
+.nav-demo {
+  margin-left: 16px; 
+  border-width: 0;
+  color: #03a87c;
+  padding: 0;
+  text-align: left;
+  vertical-align: baseline;
+  white-space: normal;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.nav-demo:hover {
+  border-color: #018d68;
+  color: #018d68;
 }

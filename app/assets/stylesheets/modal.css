@@ -72,7 +72,6 @@
 
 .login-form-container {
   margin: 0 auto;
-  /* background-color: orange; */
 }
 
 .login-label {
@@ -233,6 +232,10 @@
   text-decoration: none;
   cursor: pointer;
   border: none;
+}
+
+.modal-button-close:hover {
+  color: black;
 }
 
 .small-footer {
