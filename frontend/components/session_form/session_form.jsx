@@ -31,21 +31,65 @@ class SessionForm extends React.Component {
       return <li key={`error-${idx}`}>{error}</li>
     });
     
-
-    return (
-      <ul>
-        {errors}
-      </ul>
-    );
+    if (this.props.formType !== "Sign up") {
+      return (
+        <ul className="ul-errors">
+          {errors}
+        </ul>
+      );
+    };
   }
 
   render() {
-    const nameInput = this.props.formType === "Sign up" ? 
+
+    let nameInput = this.props.formType === "Sign up" ?
       <>
-        <label className="login-label">Full Name</label> 
+        <label className="login-label">Full Name</label>
         <input type="text" value={this.state.fullname} onChange={this.update('fullname')} className="login-input" />
+      </> : ""
+    let fullnameInput;
+
+    if (this.props.formType === "Sign up") {
+      fullnameInput = this.props.errors.includes("Fullname can't be blank") ?
+        <>
+          <label className="login-label-error">{this.props.errors[this.props.errors.indexOf("Fullname can't be blank")]}</label>
+          <input type="text" value={this.state.fullname} onChange={this.update('fullname')} className="login-input-error" />
+        </>
+        :
+        <>
+          <label className="login-label">Full Name</label>
+          <input type="text" value={this.state.fullname} onChange={this.update('fullname')} className="login-input" />
+        </> 
+    } else {
+      fullnameInput = ""
+    }
+    
+    
+
+    const emailInput = this.props.errors.includes("Email can't be blank") && this.props.formType === "Sign up" ?
+      <>
+        <label className="login-label-error">{this.props.errors[this.props.errors.indexOf("Email can't be blank")]}</label>
+        <input type="text" value={this.state.email} onChange={this.update('email')} className="login-input-error" />
       </>
-      : ""
+      :
+      <>
+        <label className="login-label">Email</label>
+        <input type="text" value={this.state.email} onChange={this.update('email')} className="login-input" />
+      </>
+
+    const passwordInput = this.props.errors.includes("Password is too short (minimum is 6 characters)") ?
+      <>
+        <label className="login-label-error">{this.props.errors[this.props.errors.indexOf("Password is too short (minimum is 6 characters)")]}</label>
+        <input type="password" value={this.state.password} onChange={this.update('password')} className="login-input-error" />
+      </>
+      :
+      <>
+        <label className="login-label">Password</label>
+        <input type="password" value={this.state.password} onChange={this.update('password')} className="login-input" />
+      </>
+    
+
+    
 
     return (
       <div className="login-form-container">
@@ -56,20 +100,19 @@ class SessionForm extends React.Component {
         
           <p className="form-description">{this.props.formDescription}</p>
         
+          
           {this.renderErrors()}
+         
 
           <div className="login-form">
-            {nameInput}
 
-            <label className="login-label">Email</label>
-            <input type="text" value={this.state.email} onChange={this.update('email')} className="login-input" />
-            
+            {fullnameInput}
+            {emailInput}
+            {passwordInput}
 
-            <label className="login-label">Password</label>
-            <input type="password" value={this.state.password} onChange={this.update('password')} className="login-input" />
-            
             <div id="submit"><input className="sessions-submit" type="submit" value={this.props.formType} /></div>
           </div>
+
           <footer className="small-footer">
             <small className="small-footer-words">{this.props.formFooter}</small>
             &nbsp;

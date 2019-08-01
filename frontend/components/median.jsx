@@ -13,13 +13,11 @@ const Median = () => {
   return (
     <div>
       <Modal/>
-      <header>
-        <Link to="/" className="header-link"><h1>Median</h1></Link>
+      <header className="header">
+        <Link to="/"><h1 className="header-logo">Median</h1></Link>
         <GreetingContainer />
       </header>
       <Switch>
-        <AuthRoute exact path="/signup" component={SignupFormContainer} />
-        <AuthRoute exact path="/login" component={LoginFormContainer} />
       </Switch>
     </div>
   )

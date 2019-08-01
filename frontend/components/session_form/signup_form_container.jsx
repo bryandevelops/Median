@@ -24,6 +24,7 @@ const mapDispatchToProps = dispatch => {
       </button>
     ),
     closeModal: () => dispatch(closeModal()),
+    demoLogin: () => dispatch(login({email: "guestuser@test.com", password: "password"}))
   };
 };
 

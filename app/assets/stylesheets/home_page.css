@@ -1,0 +1,112 @@
+.header-logo {
+  font-family: 'Playfair Display', serif; 
+    color: rgba(0,0,0,.84)!important;
+    fill: rgba(0,0,0,.84)!important;
+    font-size: 1.9em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1032px;
+  height: 65px;
+  padding: 0 20px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header-logo {
+  width: fit-content;
+}
+
+.nav-login {
+  margin-right: 16px; 
+  border-width: 0;
+  color: #03a87c;
+  padding: 0;
+  text-align: left;
+  vertical-align: baseline;
+  white-space: normal;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.nav-signup {
+  height: 37px;
+  padding: 0 16px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  border-color: #03a87c;
+  color: #03a87c;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: normal;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.nav-logout {
+  height: 37px;
+  padding: 0 16px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  border-color: #03a87c;
+  color: #03a87c;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: normal;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.nav-user {
+  font-family: 'Roboto', sans-serif;;
+  margin-right: 16px;
+}
+
+.nav-2 {
+  display: flex;
+  align-items: center
+}
+
+.nav-login:hover {
+  border-color: #018d68;
+  color: #018d68;
+}
+
+.nav-signup:hover {
+  border-color: #018d68;
+  color: #018d68;
+}
+
+.nav-logout:hover {
+  border-color: #018d68;
+  color: #018d68;
+}
+
+.profile-pic {
+  margin-right: 16px;
+  border-radius: 50%;
+  border-top: 1px solid #03a87c;
+  border-bottom: 1px solid #03a87c;
+}
