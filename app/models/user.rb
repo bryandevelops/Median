@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :bigint           not null, primary key
+#  fullname        :string           not null
+#  email           :string           not null
+#  password_digest :string           not null
+#  session_token   :string           not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 class User < ApplicationRecord
   validates :fullname, presence: true
   validates :email, presence: true, uniqueness: true
@@ -8,6 +21,11 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
 
   attr_reader :password
+
+  has_many :stories,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Story
 
   def self.generate_session_token
     SecureRandom::urlsafe_base64
