@@ -13,7 +13,7 @@ const mapDispatchToProps = dispatch => {
   return({
     logout: () => dispatch(logout()),
     openModal: modal => dispatch(openModal(modal)),
-    demoLogin: () => dispatch(login({ email: "guestuser@test.com", password: "password" })),
+    demoLogin: () => dispatch(login({ email: "guest_user@testing.com", password: "password" })),
   });
 };
 
