@@ -6,7 +6,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import GreetingContainer from './greeting/greeting_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import LoginFormContainer from './session_form/login_form_container';
-import StoriesShowContainer from './stories/stories_show_container';
+import StoriesShowContainer from './stories/story_show_container';
 import UpdateStoryContainer from './stories/update_story_container';
 import Modal from './modal/modal';
 

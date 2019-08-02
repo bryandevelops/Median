@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchStory } from '../../actions/story_actions';
-import StoryShow from './stories_show';
+import StoryShow from './story_show';
 
 const mapStateToProps = ({ sessions, entities: { users, stories } }, ownProps) => {
   return({
