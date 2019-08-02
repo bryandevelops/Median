@@ -159,6 +159,7 @@
 }
 
 .ul-errors {
+  list-style: none;
   width: fit-content;
   display: block;
   height: 35px;
