@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/stympy/faker.git
+  revision: 0deec175348ca756082f65349c32e967ff8ef6c5
+  branch: master
+  specs:
+    faker (2.1.0)
+      i18n (>= 0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -104,8 +112,6 @@ GEM
     debug_inspector (0.0.3)
     erubi (1.8.0)
     execjs (2.7.0)
-    faker (1.9.6)
-      i18n (>= 0.7)
     ffi (1.11.1)
     friendly_id (5.2.5)
       activerecord (>= 4.0.0)
@@ -254,7 +260,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
-  faker
+  faker!
   friendly_id (~> 5.2.4)
   jbuilder (~> 2.5)
   jquery-rails
