@@ -5,7 +5,6 @@
 #  id         :bigint           not null, primary key
 #  title      :string           not null
 #  body       :text             not null
-#  url        :string
 #  author_id  :integer          not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null

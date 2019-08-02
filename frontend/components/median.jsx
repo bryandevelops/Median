@@ -19,8 +19,8 @@ const Median = () => {
         <GreetingContainer />
       </header>
       <Switch>
-        <Route exact path="/api/stories/:storyId" component={StoriesShowContainer}/>
-        <Route path="/api/stories/:storyId/edit" component={UpdateStoryContainer}/>
+        <Route exact path="/stories/:storyId" component={StoriesShowContainer}/>
+        <Route path="/stories/:storyId/edit" component={UpdateStoryContainer}/>
       </Switch>
     </div>
   )

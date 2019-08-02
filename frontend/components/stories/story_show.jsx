@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 class StoryShow extends React.Component {
   componentDidMount() {
+    debugger
     this.props.fetchStory(this.props.match.params.storyId);
   }
 
@@ -13,7 +14,7 @@ class StoryShow extends React.Component {
   }
 
   render() {
-    const { story, currentUser } = this.story;
+    const { story, currentUser } = this.props;
 
     return(
       <div>

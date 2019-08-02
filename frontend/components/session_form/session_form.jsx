@@ -94,7 +94,7 @@ class SessionForm extends React.Component {
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          <button className='modal-button-close' onClick={this.handleClose}>{String.fromCharCode(10005)}</button>
+          <a className='modal-button-close' onClick={this.handleClose}>{String.fromCharCode(10005)}</a>
 
           <h1 className="form-heading">{this.props.formHeading}</h1>
         
