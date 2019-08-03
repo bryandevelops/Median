@@ -15,7 +15,7 @@ const Greeting = ({ currentUser, logout, openModal, demoLogin }) => {
   const loggedIn = () => (
     <nav className="nav-2">
       <h2 className="nav-user">{currentUser.fullname}</h2>
-      <img className="profile-pic" src="https://miro.medium.com/fit/c/64/64/1*dmbNkD5D-u45r44go_cf0g.png" alt="{currentUser.fullname}" width="32" height="32"/>
+      <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="{currentUser.fullname}" width="32" height="32"/>
       <button className="nav-logout" onClick={logout}>Log out</button>
     </nav>
   );

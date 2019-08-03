@@ -1,17 +1,17 @@
 import { connect } from 'react-redux';
-import { fetchStories, deleteStory } from '../../actions/story_actions';
+import { fetchStories } from '../../actions/story_actions';
 import StoryIndex from './story_index';
 
-const mapStateToProps = ({ entities: { stories } }) => {
+const mapStateToProps = ({ entities: { stories, users } }) => {
   return({
-    stories: Object.values(stories)
+    stories: Object.values(stories),
+    users: Object.values(users),
   })
 };
 
 const mapDispatchToProps = dispatch => {
   return({
   fetchStories: () => dispatch(fetchStories()),
-  deleteStory: id => dispatch(deleteStory(id)),
   })
 };
 

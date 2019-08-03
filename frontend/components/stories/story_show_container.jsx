@@ -5,7 +5,7 @@ import StoryShow from './story_show';
 const mapStateToProps = ({ sessions, entities: { users, stories } }, ownProps) => {
   return({
     story: stories[ownProps.match.params.storyId],
-    currentUser: users[sessions.id]
+    currentUser: users[sessions.id],
   })
 };
 
