@@ -1,5 +1,7 @@
 import React from 'react';
 import StoryIndexItem from './story_index_item';
+import StoryTopIndex from './story_top_index'
+import StorySideIndex from './story_side_index';
 import GridLoader from 'react-spinners/GridLoader';
 import { css } from '@emotion/core';
 
@@ -17,24 +19,27 @@ class StoryIndex extends React.Component {
   }
 
   render() {
-    if (this.props.stories < 20) {
+    const { stories } = this.props; 
+    const mainStories = stories.slice(5).map(story => <StoryIndexItem key={story.id} story={story}/>);
+    const topStories = <StoryTopIndex stories={stories.slice(0, 5)}/>
+    const sideStories = <StorySideIndex stories={[stories[5], stories[14], stories[16], stories[18]]}/>
+
+    if (stories < 20) {
       return( 
-        <div className="story-index-loading">
-          <GridLoader css={override} sizeUnit={"px"} size={20} />
-        </div>
+        <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
       )
     }
-    
-    const mainStories = this.props.stories.map(story => {
-      return(
-        <StoryIndexItem key={story.id} story={story}/>
-      );
-    });
-  
+
     return(
-      <ul>
-        {mainStories}
-      </ul>
+      <div className="story-index-container">
+        {/* {topStories} */}
+
+        <div className="story-main_index-container">
+          {/* {mainStories} */}
+        </div>
+
+        {sideStories}
+      </div>
     );
   }
 }

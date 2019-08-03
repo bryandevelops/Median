@@ -36,7 +36,7 @@ class StoryForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="story-form-box">
           <div className="story-form">
 
-            <input type="file" className="story-input-file" onChange={this.handleFile}/>
+            {/* <input type="file" className="story-input-file" onChange={this.handleFile}/> */}
 
             <label className="story-label-title">Title</label>
             <input type="text" value={this.state.story.title} onChange={this.update("title")} className="story-input-title"/>

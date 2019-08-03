@@ -21,7 +21,7 @@ class StoryShow extends React.Component {
     
     const { story, currentUser } = this.props;
     const image = story.photo_url ? 
-      <img src={`${story.photo_url}`} alt="Photo" width="1000" height="650" className="story-show-image"/> 
+      <img src={`${story.photo_url}`} alt="Photo" className="story-show-image"/> 
       : ""
     
     return(
