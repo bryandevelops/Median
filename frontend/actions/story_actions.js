@@ -45,7 +45,7 @@ export const fetchStory = id => dispatch => {
   return StoryAPIUtil.fetchStory(id).then(story => (
     dispatch(receiveStory(story))
   ), err => (
-    dispatch(receiveErrors(err.responseJSON))
+    dispatch(receiveErrors(err.status))
   ))
 };
 
