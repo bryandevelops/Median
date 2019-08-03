@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { fetchStories } from '../../actions/story_actions';
-import StoryIndex from './story_index';
+import { fetchStories } from '../../../actions/story_actions';
+import StoryIndex from './story_main_index';
 
 const mapStateToProps = ({ entities: { stories, users } }) => {
   return({

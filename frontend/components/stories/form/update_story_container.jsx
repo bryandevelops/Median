@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { updateStory, fetchStory } from '../../actions/story_actions';
+import { updateStory, fetchStory } from '../../../actions/story_actions';
 import StoryForm from './story_form';
 
 const mapStateToProps = ({ sessions, entities: { users, stories } }, ownProps) => {

@@ -5,9 +5,9 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 import Modal from './modal/modal';
 import GreetingContainer from './greeting/greeting_container';
-import StoryIndexContainer from './stories/story_index_container';
-import StoriesShowContainer from './stories/story_show_container';
-import UpdateStoryContainer from './stories/update_story_container';
+import StoryIndexContainer from './stories/index/story_main_index_container';
+import StoriesShowContainer from './stories/show/story_show_container';
+import UpdateStoryContainer from './stories/form/update_story_container';
 
 const Median = () => {
   return (
