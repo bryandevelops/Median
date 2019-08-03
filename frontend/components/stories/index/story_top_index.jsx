@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const StoryTopIndex = ({ stories }) => {
-  // debugger
   return(
     <div className="story-top-index-container">
 

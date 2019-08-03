@@ -1,4 +1,4 @@
-import { connect } from 'react-dom';
+import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { createStory } from '../../../actions/story_actions'
 import StoryForm from './story_form';
@@ -6,7 +6,7 @@ import StoryForm from './story_form';
 const mapStateToProps = ({ sessions, entities: { users } }) => {
   return({
     story: { title: "", body: "" },
-    formType: "Create story",
+    formType: "Publish",
     currentUser: users[sessions.id]
   })
 };

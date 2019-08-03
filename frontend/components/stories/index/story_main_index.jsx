@@ -38,7 +38,7 @@ class StoryIndex extends React.Component {
           {/* {mainStories} */}
         </div>
 
-        {sideStories}
+        {/* {sideStories} */}
       </div>
     );
   }

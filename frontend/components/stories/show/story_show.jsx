@@ -30,7 +30,7 @@ class StoryShow extends React.Component {
           <h1 className="story-show-title">{story.title}</h1>
 
           <Link to={`/users/${story.author_id}`}>
-            <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="{currentUser.fullname}" width="32" height="32" />
+            <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt={`${currentUser.fullname}`} width="32" height="32" />
           </Link>
 
           <Link to={`/users/${story.author_id}`}>
