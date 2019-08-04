@@ -32,13 +32,17 @@ class StoryIndex extends React.Component {
 
     return(
       <div className="story-index-container">
-        {/* {topStories} */}
+        {topStories}
+        
+      <section className="parent">
+        <div className="bottom-left">
+          {mainStories}
+        </div> 
 
-        <div className="story-main_index-container">
-          {/* {mainStories} */}
-        </div>
-
-        {/* {sideStories} */}
+        <div className="bottom-right">
+          {sideStories}
+        </div> 
+      </section>
       </div>
     );
   }

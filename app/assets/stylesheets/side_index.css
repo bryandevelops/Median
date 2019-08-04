@@ -1,0 +1,108 @@
+.story-side-index-container {
+  display: flex;
+  margin-top: 50px;
+  width: 264px;
+  padding: 32px;
+  flex-direction: column;
+  position: sticky; 
+  top: 50px;
+}
+
+.side-index-author {
+  display: block;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400; 
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-bottom: 4px;
+}
+
+.side-index-author:hover{
+  text-decoration: underline;
+}
+
+.side-index-title {
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.side-index-date {
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.side-index-heading {
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  padding-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  width: 264px;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+.side-index-number {
+  font-size: 28px;
+  color: rgba(0,0,0,.15);
+  fill: rgba(0,0,0,.15);
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 15px;
+}
+
+.side-index-1 {
+  display: flex;
+  margin-top: 32px;
+}
+
+.side-index-2 {
+  display: flex;
+  margin-top: 32px;
+}
+
+.side-index-3 {
+  display: flex;
+  margin-top: 32px;
+}
+
+.side-index-4 {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 70px;
+}
+
+.side-index-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-index-footer {
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0 25px 0;
+  border-top: 1px solid rgba(0,0,0,.05);
+}

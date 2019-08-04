@@ -1,0 +1,223 @@
+.story-index-container {
+  margin: 0 auto;
+  width: 1032px;
+}
+
+.story-top-index-container { 
+  display: flex;
+  height: 430px;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+.top-index-left {
+  width: 340px;
+  height: 334px;
+  margin-right: 25px;
+}
+
+.top-index-left-image {
+  width: 340px;
+  height: 150px;
+}
+
+.top-index-left-image-container {
+  width: 340px;
+  height: 150px;
+  margin-bottom: 16px;
+}
+
+.top-index-left-content {
+  width: 316px; 
+  height: 145px;
+}
+.top-index-right {
+  width: 240px;
+  height: 334px;
+}
+
+.top-index-right-image {
+  width: 253px;
+  height: 150px;
+}
+
+.top-index-right-image-container {
+  width: 340px;
+  height: 150px;
+  margin-bottom: 16px;
+}
+
+.top-index-right-content {
+  width: 316px; 
+  height: 145px;
+}
+
+.top-index-author {
+  display: block;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400; 
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-bottom: 4px;
+}
+
+.top-index-author:hover{
+  text-decoration: underline;
+}
+
+.top-index-left-title {
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.top-index-left-body {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+.top-index-right-title {
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.top-index-right-body {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.top-index-date {
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.top-index-middle-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 25px;
+}
+
+.top-index-middle-body {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 0;
+  min-height: 0;
+  /* margin-bottom: 16px; */
+}
+
+.top-index-middle {
+  width: 389px;
+  height: 340px;
+  margin-right: 25px;
+}
+
+.top-index-middle-title {
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.top-index-middle-title {
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+.top-index-middle-1 {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.top-index-middle-2 {
+  display: flex;
+  margin-bottom: 25px;
+
+}
+.top-index-middle-3 {
+  display: flex;
+}
+
+.top-index-header {
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: white;
+  height: 50px;
+  vertical-align: bottom;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+  position:sticky; 
+  top:0;
+}
+
+.top-index-header a {
+  padding-right: 25px;
+}
+
+.top-index-header a:hover {
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+}
+
+#selected {
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+}

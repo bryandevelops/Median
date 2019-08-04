@@ -71,7 +71,7 @@ photo3 = open("https://median-aa-seeds.s3.amazonaws.com/num3.jpg")
 story3.photo.attach(io: photo3, filename: "num3.jpg")
 
 story4 = Story.create!(
-  title: "That it should come to this!.",
+  title: "That it should come to this!",
   body: Faker::Hipster.paragraph_by_chars(characters: 2000, supplemental: false),
   author_id: 2
 )
@@ -175,7 +175,7 @@ photo16 = open("https://median-aa-seeds.s3.amazonaws.com/num16.jpg")
 story16.photo.attach(io: photo16, filename: "num16.jpg")
 
 story17 = Story.create!(
-  title: "Can one desire too much of a good thing?.",
+  title: "Can one desire too much of a good thing?",
   body: Faker::Hipster.paragraph_by_chars(characters: 2000, supplemental: false),
   author_id: 9
 )
