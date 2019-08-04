@@ -4,10 +4,7 @@ import { withRouter } from 'react-router-dom';
 class StoryForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      story: this.props.story,
-      photoFile: null
-    }
+    this.state = this.props.story
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.handleFile = this.handleFile.bind(this);
@@ -21,8 +18,9 @@ class StoryForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const story = Object.assign({}, this.state.story);
-    this.props.processForm(story).then(() => this.props.history.push(`/stories/${this.state.story.id}`))
+    const story = Object.assign({}, this.props.story);
+    // debugger
+    this.props.processForm(story).then(() => this.props.history.push(`/stories/${this.props.story.id}`))
   }
 
   handleDelete(e) {
