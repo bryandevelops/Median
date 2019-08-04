@@ -6,6 +6,7 @@ const mapStateToProps = ({ sessions, entities: { users, stories } }, ownProps) =
   return({
     story: stories[ownProps.match.params.storyId],
     currentUser: users[sessions.id],
+    users
   })
 };
 

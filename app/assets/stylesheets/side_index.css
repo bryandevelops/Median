@@ -11,7 +11,7 @@
 .side-index-author {
   display: block;
   font-style: normal;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Lucida Grande";
   letter-spacing: 0;
   font-size: 15px;
   line-height: 20px;
@@ -29,7 +29,7 @@
   color: rgba(0,0,0,.84);
   fill: rgba(0,0,0,.84);
   margin-bottom: 4px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Lucida Grande";
   font-weight: 600;
   font-size: 16px;
 }
@@ -37,7 +37,7 @@
 .side-index-date {
   color: rgba(0,0,0,.54);
   fill: rgba(0,0,0,.54);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Lucida Grande";
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0;
@@ -49,7 +49,7 @@
   color: rgba(0,0,0,.84);
   fill: rgba(0,0,0,.84);
   padding-bottom: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Lucida Grande";
   font-weight: 600;
   font-size: 20px;
   width: 264px;
@@ -64,7 +64,7 @@
   letter-spacing: 0;
   font-weight: 400;
   font-style: normal;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Lucida Grande";
   padding-right: 15px;
 }
 
@@ -97,7 +97,7 @@
 .side-index-footer {
   color: rgba(0,0,0,.54);
   fill: rgba(0,0,0,.54);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Lucida Grande";
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0;

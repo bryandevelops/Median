@@ -20,12 +20,6 @@ ApplicationRecord.connection.reset_pk_sequence!('stories')
 
 # USERS
 
-User.create!(
-  fullname: "Guest User",
-  email: "guest_user@testing.com",
-  password: "password"
-)
-
 10.times do
   first_name = Faker::Name.first_name
   last_name = Faker::Name.last_name
@@ -207,6 +201,12 @@ photo20 = open("https://median-aa-seeds.s3.amazonaws.com/num20.jpg")
 story20.photo.attach(io: photo20, filename: "num20.jpg")
 
 
-
 # Images sources from https://www.cathryn-virginia.com/
 
+# DEMO
+
+User.create!(
+  fullname: "Guest User",
+  email: "guest_user@testing.com",
+  password: "password"
+)

@@ -1,0 +1,80 @@
+.story-box-shadow {
+  position: relative;
+  height: 13px;
+  /* box-shadow: 0 8px 6px -6px black; */
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05);
+  bottom: 15px
+}
+
+.story-show-container {
+  margin: 0 auto;
+  width: 680px;
+  padding: auto 24px;
+}
+
+.story-show-header {
+  display: flex;
+  flex-direction: column
+}
+
+.story-show-content {
+  display: flex;
+}
+
+.story-show-image {
+  width: 680px;
+  height: auto;
+}
+
+.story-show-image-container {
+  margin: 50px 0;
+}
+
+.story-show-title {
+  margin-top: 20px;
+  font-style: normal;
+  line-height: 48px;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.84);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  word-break: break-word;
+  padding-bottom: 25px;
+}
+
+.story-show-author {
+  font-style: normal;
+  font-family: "Lucida Grande";
+  letter-spacing: 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400; 
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin: 4px 0 2px 0;
+}
+
+.story-show-date {
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: "Lucida Grande";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.story-show-body {
+  margin-top: 2em;
+  font-size: 21px;
+  margin-bottom: -0.46em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: -0.004em;
+  line-height: 1.58;
+  color: rgba(0, 0, 0, 0.84);
+  font-style: normal;
+  font-weight: 400;
+  word-break: break-word;
+  margin-bottom: 100px;
+}
