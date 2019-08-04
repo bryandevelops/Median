@@ -3,12 +3,20 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { updateStory, fetchStory, deleteStory } from '../../../actions/story_actions';
 import StoryForm from './story_form';
+import GridLoader from 'react-spinners/GridLoader';
+import { css } from '@emotion/core';
+
+const override = css`
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 180px;
+`;
 
 const mapStateToProps = ({ sessions, entities: { users, stories } }, ownProps) => {
-  const defaultStory = { title: "", body: "" }
-  
+  // const defaultStory = { title: "", body: "" }
   return({
-    story: stories[ownProps.match.params.storyId] || defaultStory,
+    story: stories[ownProps.match.params.storyId],
     formType: "Edit story",
     currentUser: users[sessions.id],
   })
@@ -36,7 +44,13 @@ class UpdateStoryForm extends React.Component {
   }
 
   render() {
-    const { story, formType, processForm, currentUser } = this.props;
+    const { story, formType, processForm, currentUser, deleteStory } = this.props;
+
+    if (!story) {
+      return (
+        <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
+      )
+    }
 
     return(
       <StoryForm 

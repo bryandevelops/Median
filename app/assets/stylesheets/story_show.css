@@ -78,3 +78,20 @@
   word-break: break-word;
   margin-bottom: 100px;
 }
+
+.story-show-edit {
+  align-self: center;
+  margin-left: auto;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  border-color: #03a87c;
+  color: #03a87c;
+  white-space: normal;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+}

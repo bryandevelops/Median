@@ -27,7 +27,11 @@ class StoryShow extends React.Component {
     const image = story.photo_url ? 
       <img src={`${story.photo_url}`} alt="Photo" className="story-show-image"/> 
       : ""
-    
+
+    const edit = currentUser.id === story.author_id ?
+      <button className="story-show-edit"><Link to={`/stories/${story.id}/edit`}>Update</Link></button>
+      : ""
+
     return(
       <>
         <div className="story-box-shadow"></div>
@@ -50,8 +54,10 @@ class StoryShow extends React.Component {
                 {months[Math.floor(Math.random() * months.length)]}&nbsp;{days[Math.floor(Math.random() * days.length)]}&nbsp;&#183;&nbsp;{nums[Math.floor(Math.random() * nums.length)]}&nbsp;min&nbsp;read&nbsp;&#9733;
               </small>
             </header>
-          </div>
 
+          {edit}
+
+          </div>
           <figure className="story-show-image-container">{image}</figure>
 
           <div className="story-show-body-container">
