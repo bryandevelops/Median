@@ -23,9 +23,9 @@ const Median = () => {
       <Switch>
         <Route exact path="/" component={StoryIndexContainer}/>
         <Route exact path="/users/:userId" component={UserShowContainer}/>
-        <Route exact path="/stories/:storyId" component={StoriesShowContainer}/>
         <ProtectedRoute exact path="/stories/new" component={CreateStoryContainer}/>
         <ProtectedRoute exact path="/stories/:storyId/edit" component={UpdateStoryContainer}/>
+        <Route exact path="/stories/:storyId" component={StoriesShowContainer}/>
         <Redirect to="/"/>
       </Switch>
     </div>

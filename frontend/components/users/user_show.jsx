@@ -115,8 +115,14 @@ class UserShow extends React.Component {
         <Link to="/stories/new"><button className="user-show-create" style={userShowCreate}>Publish</button></Link>
       </div>
       : ""
-    
 
+    const followButton = this.props.currentUser && this.props.currentUser.id !== this.props.user.id ?
+      <>
+        <Link to="/"><button className="user-show-follow">Follow</button></Link>
+        <img className="user-show-arrow" src="https://median-aa-seeds.s3.amazonaws.com/down-arrow.png" alt="Icon" />
+      </>
+      : ""
+    
     return(
       <>
         <div className="story-box-shadow"></div>
@@ -129,8 +135,7 @@ class UserShow extends React.Component {
             <div className="user-show-header-left">
               <div className="user-show-header-left-content">
                 <h1 className="user-show-author">{user.fullname}</h1>
-                <Link to="/"><button className="user-show-follow">Follow</button></Link>
-                <img className="user-show-arrow" src="https://median-aa-seeds.s3.amazonaws.com/down-arrow.png" alt="Icon"/>
+                {followButton}
               </div>
 
               <div className="user-show-header-quote">
@@ -141,9 +146,7 @@ class UserShow extends React.Component {
             </div>
 
             <div className="user-show-header-right">
-              {/* <Link to={`/users/${user.id}`}> */}
                 <img className="user-show-profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
-              {/* </Link> */}
             </div>
           </header>
 

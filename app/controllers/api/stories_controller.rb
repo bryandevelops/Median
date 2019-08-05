@@ -34,6 +34,7 @@ class Api::StoriesController < ApplicationController
     @story = Story.find(params[:id])
 
     if @story
+      @story.destroy
       render "api/stories/show"    
     else
       render json: ["Not found"], status: 404

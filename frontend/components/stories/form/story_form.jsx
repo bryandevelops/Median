@@ -25,7 +25,8 @@ class StoryForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const story = Object.assign({}, this.props.story);
+    debugger
+    const story = Object.assign({}, this.state);
     this.props.processForm(story).then(() => this.props.history.push(`/stories/${this.props.story.id}`))
   }
 
@@ -48,7 +49,7 @@ class StoryForm extends React.Component {
     //   {this.props.history.push("/")}
     //   return <></>
     // }
-    
+
     return(
       <>
         <div className="story-box-shadow"></div>
@@ -63,13 +64,13 @@ class StoryForm extends React.Component {
               </div>
               
             <h6 className="story-form-title">Title</h6>
-              <input type="text" value={this.state.title} onChange={this.update("title")} className="story-input-title" placeholder="Title"/>
+              <input type="text" value={this.state.title} onChange={this.update("title")} className="story-input-title" placeholder="Title" required/>
               
-              <label className="file-upload"><img src="https://median-aa-seeds.s3.amazonaws.com/plus.png"/>
+              {/* <label className="file-upload"><img src="https://median-aa-seeds.s3.amazonaws.com/plus.png"/>
                 <input type="file" className="story-input-file" onChange={this.handleFile}/>
-              </label>
+              </label> */}
 
-              <textarea value={this.state.body} onChange={this.update("body")} className="story-input-body" placeholder="Tell your story..."/>
+              <textarea value={this.state.body} onChange={this.update("body")} className="story-input-body" placeholder="Tell your story..." required/>
           </form>
         </div>
       </>
