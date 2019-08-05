@@ -1,4 +1,5 @@
 import { RECEIVE_ALL_STORIES, RECEIVE_STORY, REMOVE_STORY } from '../actions/story_actions';
+import { RECEIVE_USER } from '../actions/user_actions';
 import merge from 'lodash/merge';
 
 const storiesReducer = (oldState = {}, action) => {
@@ -15,6 +16,8 @@ const storiesReducer = (oldState = {}, action) => {
       newState = merge({}, oldState);
       delete newState[action.storyId]
       return newState;
+    case RECEIVE_USER:
+      return action.user.stories;
     default:
       return oldState;
   }

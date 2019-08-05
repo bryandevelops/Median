@@ -24,18 +24,18 @@ class StoryIndex extends React.Component {
     }
     window.scrollTo(0, 0);
   }
-
   render() {
     const { stories } = this.props; 
-    const mainStories = stories.slice(5).map(story => <StoryIndexItem key={story.id} story={story}/>);
-    const topStories = <StoryTopIndex stories={stories.slice(0, 5)}/>
-    const sideStories = <StorySideIndex stories={[stories[5], stories[14], stories[16], stories[18]]}/>
-
-    if (stories < 20) {
+    
+    if (stories.length < 20) {
       return( 
         <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
       )
     }
+    const mainStories = stories.slice(5).map(story => <StoryIndexItem key={story.id} story={story}/>);
+    const topStories = <StoryTopIndex stories={stories.slice(0, 5)}/>
+    const sideStories = <StorySideIndex stories={[stories[5], stories[14], stories[16], stories[18]]}/>
+
 
     return(
       <div className="story-index-container">
