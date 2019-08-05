@@ -8,6 +8,7 @@ class StoryShow extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
+
     if (prevProps.match.params.storyId !== this.props.match.params.storyId) {
       this.props.fetchStory(this.props.match.params.storyId).fail(err => this.props.history.push("/"))
     }

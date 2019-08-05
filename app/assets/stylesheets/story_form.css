@@ -127,8 +127,8 @@
 }
 
 .story-input-file {
-	width: 0.1px;
-	height: 0.1px;
+	width: 1px;
+	height: 10px;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
@@ -141,6 +141,12 @@
   justify-content: flex-end;
   display: block;
   margin: 0 auto;
+}
+
+.story-form-preview {
+  width: 680px;
+  height: auto;
+  margin: 0 auto 10px auto;
 }
 
 

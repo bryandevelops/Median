@@ -17,12 +17,19 @@ const StoryTopIndex = ({ stories }) => {
   const nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
 
   if (!stories) {
+    debugger
     return (
       <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
     )
   }
 
+  if (stories.length === 0) return null
+
+
   return(
+
+
+
     <>
     <header className="top-index-header">
         <a id="selected" href="#">HOME</a>

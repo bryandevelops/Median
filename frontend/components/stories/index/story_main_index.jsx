@@ -17,6 +17,13 @@ class StoryIndex extends React.Component {
     this.props.fetchStories();
     window.scrollTo(0, 0);
   }
+  
+  componentDidUpdate(prevProps) {
+    if (prevProps.match.params.storyId != this.props.match.params.storyId) {
+      this.props.fetchStory(this.props.match.params.storyId);
+    }
+    window.scrollTo(0, 0);
+  }
 
   render() {
     const { stories } = this.props; 
