@@ -10,23 +10,23 @@ const UserShowItem = ({ story }) => {
   return(
     <div className="user-item-container">
       <header className="user-item-header">
-        <div className="profile-pic">
+        <div className="user-item-profile-pic-container">
           <Link to={`/users/${story.author.id}`}>
-            <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
+            <img className="user-item-profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="40" height="40" />
           </Link>
-        </div>
 
-        <div className="user-item-info">
-          <small className="user-item-author">
-            <Link to={`/users/${story.author.id}`}>
-              {story.author.fullname}
-            </Link>
-            &nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}
-          </small>
+          <div className="user-item-info">
+            <small className="user-item-author">
+              <Link to={`/users/${story.author.id}`}>
+                {story.author.fullname}
+              </Link>
+              &nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}
+            </small>
 
-          <small className="user-item-date">
-            {months[Math.floor(Math.random() * months.length)]}&nbsp;{days[Math.floor(Math.random() * days.length)]}&nbsp;&#183;&nbsp;{nums[Math.floor(Math.random() * nums.length)]}&nbsp;min&nbsp;read&nbsp;&#9733;
-          </small>
+            <small className="user-item-date">
+              {months[Math.floor(Math.random() * months.length)]}&nbsp;{days[Math.floor(Math.random() * days.length)]}&nbsp;&#183;&nbsp;{nums[Math.floor(Math.random() * nums.length)]}&nbsp;min&nbsp;read&nbsp;&#9733;
+            </small>
+          </div>
         </div>
 
         <Link to={`/stories/${story.id}`}>
@@ -39,7 +39,8 @@ const UserShowItem = ({ story }) => {
 
         <footer className="user-item-footer">
           <Link to={`/stories/${story.id}`}>
-            <small className="user-item-responses">Responses</small>
+            <small className="user-item-responses">responses</small>
+            <img className="user-item-arrow" src="https://median-aa-seeds.s3.amazonaws.com/down-arrow.png" alt="Icon" />
           </Link>
         </footer>
       </header>

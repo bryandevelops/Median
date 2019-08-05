@@ -18,7 +18,6 @@ export const receiveErrors = errors => {
 };
 
 export const fetchUser = id => dispatch => {
-  debugger
   return UserAPIUtil.fetchUser(id).then(user => (
     dispatch(receiveUser(user))
   ), err => (

@@ -1,0 +1,309 @@
+.story-box-shadow {
+  position: relative;
+  height: 13px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05);
+  bottom: 15px
+}
+
+.user-show-container {
+  width: 680px;
+  height: 227px;
+  margin: 0 auto;
+}
+
+.user-show-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  height: 197px;
+}
+
+.user-show-header-left {
+  display: block;
+}
+
+.user-show-header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-show-header-left-content {
+  display: flex;
+  align-items: center;
+}
+
+.user-show-header-quote {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.user-show-follow {
+  margin: 0 17px;
+  align-self: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  border-color: #03a87c;
+  color: #03a87c;
+  fill:  #03a87c;
+  white-space: normal;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  height: 20px;
+}
+
+.user-show-follow:hover {
+  border-color: #018d68;
+  color: #018d68;
+}
+
+.user-show-profile-pic {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 1px solid #03a87c;
+}
+
+.user-show-author{
+  letter-spacing: -0.93px;
+  font-size: 31px;
+  line-height: 40px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.84);
+  font-family: "Lucida Grande";
+  color: rgba(0, 0, 0, 0.84);
+  fill: rgba(0, 0, 0, 0.84);
+}
+
+.user-show-quote-title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 18.96px;
+  color: rgba(0, 0, 0, 0.76);;
+  fill: rgba(0, 0, 0, 0.76);
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-family: "Lucida Grande";
+}
+
+.user-show-quote-body {
+  letter-spacing: 0px;
+  font-size: 15.8px;
+  line-height: 20px;
+  font-style: normal;
+  font-family: "Lucida Grande";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54);
+  fill: rgba(0, 0, 0, 0.54);
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.user-show-followers {
+  letter-spacing: 0px;
+  font-size: 15.8px;
+  line-height: 20px;
+  font-style: normal;
+  font-family: "Lucida Grande";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.69);
+  fill: rgba(0, 0, 0, 0.69);
+  width: 500px;
+}
+
+.user-show-break {
+  letter-spacing: 0px;
+  font-size: 13.5px;
+  line-height: 20px;
+  font-style: normal;
+  font-family: "Lucida Grande";
+  font-weight: 400;
+  color: black;
+  fill: black;
+  width: 680px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,.13);
+}
+
+.user-show-no-content-heading {
+  margin: 40px 0 70px 0;
+  letter-spacing: -0.32px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.84);
+  fill: rgba(0, 0, 0, 0.84);
+}
+
+.user-show-no-content-image {
+  width: 680px;
+}
+
+/* .user-show-create {
+  align-self: center ;
+  border: 1px solid rgba(0,0,0,.15) ;
+  border-radius: 4px ;
+  border-color: #03a87c ;
+  color: #03a87c ;
+  fill:  #03a87c ;
+  white-space: normal;
+  text-decoration: none ;
+  cursor: pointer ;
+  font-weight: 400 ;
+  font-style: normal ;
+  letter-spacing: 0 ;
+  font-size: 13px ;
+  line-height: 20px ;
+}
+
+.user-show-create-container {
+  display: flex;
+  width: 900px;
+  height: 70px;
+  margin: 0 auto;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+  position: sticky;
+  top: 0;
+} */
+
+.user-show-content-heading {
+  margin: 40px 0 13px 0;
+  letter-spacing: -0.32px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.84);
+  fill: rgba(0, 0, 0, 0.84);
+}
+
+.user-item-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.50);
+  margin-bottom: 24px;
+  padding: 23px 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.user-item-profile-pic {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 24px 24px;
+  border-radius: 50%;
+  border-top: 2px solid #03a87c;
+  border-bottom: 2px solid #03a87c;
+}
+
+.user-item-profile-pic:hover {
+  border-top:  2px solid #0d8867;
+  border-bottom:  2px solid #0d8867;
+}
+
+.user-item-image {
+  width: 630px;
+}
+
+.user-item-image-container {
+  margin: 0 auto 24px auto;
+  width: 630px;
+
+
+}
+
+.user-item-body {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: "Lucida Grande";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 14x;
+  line-height: 20px;
+}
+
+.user-item-profile-pic-container {
+  display: flex;
+}
+
+.user-item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-item-author {
+  width: 630px;
+  font-style: normal;
+  font-family: "Lucida Grande";
+  letter-spacing: 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400; 
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-bottom: 4px;
+}
+
+.user-item-author:hover {
+  text-decoration: underline;
+}
+
+.user-item-date {
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: "Lucida Grande";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.user-item-title {
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-left: 24px; 
+  margin-bottom: 16px;
+  font-family: "Lucida Grande";
+  font-weight: 600;
+  font-size: 20px;
+  width: 630px;
+}
+
+.user-item-body {
+  width: 630px;
+  margin: 0 auto 16px auto;
+}
+
+.user-item-responses {
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: "Lucida Grande";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.user-item-footer {
+  text-align: right;
+  margin-right: 24px; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-item-arrow {
+  height: 10px;
+  margin-left: 5px;
+}

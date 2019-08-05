@@ -113,14 +113,14 @@
   cursor: pointer;
 }
 
-.profile-pic {
+.greeting-profile-pic {
   margin-right: 16px;
   border-radius: 50%;
   border-top: 2px solid #03a87c;
   border-bottom: 2px solid #03a87c;
 }
 
-.profile-pic:hover {
+.greeting-profile-pic:hover {
   border-top:  2px solid #0d8867;
   border-bottom:  2px solid #0d8867;
 }

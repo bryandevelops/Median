@@ -11,7 +11,6 @@ class StoryForm extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    debugger
     if (nextProps.value !== this.props.value) {
       this.props.fetchStory(nextProps.match.params.storyId)
       // .fail(err => this.props.history.push("/"));

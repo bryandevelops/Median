@@ -29,7 +29,6 @@ class UserShow extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    debugger
     if (nextProps.value !== this.props.value) {
       this.props.fetchUser(nextProps.match.params.userId).fail(err => this.props.history.push("/"));
     }
@@ -66,8 +65,8 @@ class UserShow extends React.Component {
     const quotes = [
       '“The Way Get Started Is To Quit Talking And Begin Doing.” – Walt Disney',
       '“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.” – Winston Churchill',
-      '“Don’t Let Yesterday Take Up Too Much Of Today.” – Will Rogers',
-      '“You Learn More From Failure Than From Success. Don’t Let It Stop You. Failure Builds Character.” – Bryan Santos',
+      '“Whether You Think You Can Or Think You Can’t, You’re Right.” – Henry Ford',
+      '“You Learn More From Failure Than From Success. Don’t Let It Stop You. Failure Builds Character.” – Og Mandino',
       '“It’s Not Whether You Get Knocked Down, It’s Whether You Get Up.” – Inspirational Quote By Vince Lombardi',
       '“If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.” – Steve Jobs',
       '“People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do.” – Rob Siltanen',
@@ -82,28 +81,77 @@ class UserShow extends React.Component {
       )
     }
 
-    return(
-      <div className="user-show-container">
+    const userShowCreate = {
+      alignSelf: "center",
+      border: "1px solid rgba(0, 0, 0, .15)",
+      borderRadius: "4px",
+      borderColor: "#03a87c",
+      color: "#03a87c",
+      fill: "#03a87c",
+      whiteSpace: "normal",
+      textDecoration: "none",
+      cursor: "pointer",
+      fontWeight: "400",
+      fontStyle: "normal",
+      letterSpacing: "0",
+      fontSize: "13px",
+      lineHeight: "20px"
+    }
 
-        <header className="user-show-header">
-          <div className="user-show-header-left">
-            <h1>{user.fullname}</h1>
-            <Link to="/"><button className="user-show-follow">Follow</button></Link>
-            <div className="user-show-header-quote">
-              Quote of the Day: {quotes[Math.floor(Math.random() * quotes.length)]}
-            </div>
-          </div>
+    const userShowContainer = {
+      display: "flex",
+      width: "900px",
+      height: "70px",
+      margin: "0 auto",
+      alignItems: "center",
+      backgroundColor: "white",
+      boxShadow: "0 2px 2px -2px rgba(0, 0, 0, .15)",
+      position: "sticky",
+      top: "0"
+    }
 
-          <div className="user-show-header-right">
-            <Link to={`/users/${user.id}`}>
-              <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
-            </Link>
-          </div>
-        </header>
-
-        {this.userContent()}
+    const createButton = this.props.currentUser && this.props.currentUser.id === this.props.user.id ?
+      <div className="user-show-create-container" style={userShowContainer}>
+        <Link to="/stories/new"><button className="user-show-create" style={userShowCreate}>Publish</button></Link>
       </div>
-     
+      : ""
+    
+
+    return(
+      <>
+        <div className="story-box-shadow"></div>
+
+        {createButton}
+
+        <div className="user-show-container">
+
+          <header className="user-show-header">
+            <div className="user-show-header-left">
+              <div className="user-show-header-left-content">
+                <h1 className="user-show-author">{user.fullname}</h1>
+                <Link to="/"><button className="user-show-follow">Follow</button></Link>
+                <img className="user-show-arrow" src="https://median-aa-seeds.s3.amazonaws.com/down-arrow.png" alt="Icon"/>
+              </div>
+
+              <div className="user-show-header-quote">
+                <small className="user-show-quote-title">Quote of the Day:</small>
+                <div className="user-show-quote-body">{quotes[Math.floor(Math.random() * quotes.length)]}</div>
+                <small className="user-show-followers">Following&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Followers&nbsp;&nbsp;&nbsp;</small>
+              </div>
+            </div>
+
+            <div className="user-show-header-right">
+              {/* <Link to={`/users/${user.id}`}> */}
+                <img className="user-show-profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
+              {/* </Link> */}
+            </div>
+          </header>
+
+          <h4 className="user-show-break">Profile</h4>
+
+          {this.userContent()}
+        </div>
+      </>
     )
   }
 }

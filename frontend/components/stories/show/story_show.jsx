@@ -43,7 +43,7 @@ class StoryShow extends React.Component {
           <div className="story-show-content">
 
             <Link to={`/users/${story.author_id}`}>
-              <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
+              <img className="story-show-profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
             </Link>
 
             <header className="story-show-header">
