@@ -10,7 +10,15 @@ export const receiveUser = user => {
   })
 };
 
+export const receiveErrors = errors => {
+  return ({
+    type: RECEIVE_USER_ERRORS,
+    errors
+  })
+};
+
 export const fetchUser = id => dispatch => {
+  debugger
   return UserAPIUtil.fetchUser(id).then(user => (
     dispatch(receiveUser(user))
   ), err => (

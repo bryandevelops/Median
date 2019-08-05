@@ -110,7 +110,7 @@ class SessionForm extends React.Component {
             {emailInput}
             {passwordInput}
 
-            <div id="submit"><input className="sessions-submit" type="submit" value={this.props.formType} /></div>
+            <div id="modal-submit"><input className="sessions-submit" type="submit" value={this.props.formType} /></div>
           </div>
 
           <footer className="small-footer">

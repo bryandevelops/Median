@@ -1,4 +1,4 @@
-#submit {
+#story-form-submit {
   display: flex;
   width: 900px;
   height: 70px;
@@ -105,7 +105,6 @@
   fill: rgba(0,0,0,.76);
   /* border-left: 1px solid lightgray; */
   resize: none;
-  text-indent: 15px;
 }
 
 ::placeholder {

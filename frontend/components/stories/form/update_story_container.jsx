@@ -37,7 +37,7 @@ class UpdateStoryForm extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.story.id != this.props.match.params.storyId) {
+    if (prevProps.match.params.storyId != this.props.match.params.storyId) {
       this.props.fetchStory(this.props.match.params.storyId);
     }
     window.scrollTo(0, 0);

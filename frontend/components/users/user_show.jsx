@@ -14,19 +14,25 @@ const override = css`
 class UserShow extends React.Component {
   
   componentDidMount() {
-    this.props.fetchUser(this.props.match.params.userId);
+    this.props.fetchUser(this.props.match.params.userId).fail(err => this.props.history.push("/"));
     window.scrollTo(0, 0);
   }
 
   componentDidUpdate(prevProps) {
-    debugger
-    if (prevProps.user.id != this.props.match.params.userId) {
-      this.props.fetchUser(this.props.match.params.userId);
+    if (prevProps.match.params.userId != this.props.match.params.userId) {
+      this.props.fetchUser(this.props.match.params.userId).fail(err => this.props.history.push("/"));
     }
-    if (prevProps.user.storyIds != this.props.user.storyIds) {
-      this.props.user.storyIds.forEach(id => this.props.fetchStory(id));
-    }
+    // if (prevProps.user.storyIds != this.props.user.storyIds) {
+    //   this.props.user.storyIds.forEach(id => this.props.fetchStory(id));
+    // }
     window.scrollTo(0, 0);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    debugger
+    if (nextProps.value !== this.props.value) {
+      this.props.fetchUser(nextProps.match.params.userId).fail(err => this.props.history.push("/"));
+    }
   }
 
   userContent() {

@@ -10,6 +10,14 @@ class StoryForm extends React.Component {
     this.handleFile = this.handleFile.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    debugger
+    if (nextProps.value !== this.props.value) {
+      this.props.fetchStory(nextProps.match.params.storyId)
+      // .fail(err => this.props.history.push("/"));
+    }
+  }
+
   update(field) {
     return (e) => {
       this.setState({ [field]: e.target.value })
@@ -37,7 +45,10 @@ class StoryForm extends React.Component {
     <button className="story-form-delete" onClick={this.handleDelete}>Delete story</button>
     : ""
 
-    
+    // if (this.props.currentUser && this.props.currentUser.id !== this.props.story.author_id) {
+    //   {this.props.history.push("/")}
+    //   return <></>
+    // }
     
     return(
       <>
@@ -47,7 +58,7 @@ class StoryForm extends React.Component {
           <form onSubmit={this.handleSubmit} className="story-form">
 
 
-              <div id="submit">
+              <div id="story-form-submit">
                 <input className="story-form-edit" type="submit" value={this.props.formType} />
                 {deleteButton}
               </div>

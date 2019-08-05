@@ -19,7 +19,7 @@ const Greeting = ({ currentUser, logout, openModal, demoLogin }) => {
       </Link>
       
       <Link to={`/users/${currentUser.id}`}>
-        <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="{currentUser.fullname}" width="32" height="32"/>
+        <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="{currentUser.fullname}" width="36" height="36"/>
       </Link>
       <button className="nav-logout" onClick={logout}>Log out</button>
     </nav>

@@ -38,7 +38,7 @@ const UserShowItem = ({ story }) => {
         </Link>
 
         <footer className="user-item-footer">
-          <Link>
+          <Link to={`/stories/${story.id}`}>
             <small className="user-item-responses">Responses</small>
           </Link>
         </footer>

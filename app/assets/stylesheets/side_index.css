@@ -95,14 +95,22 @@
 }
 
 .side-index-footer {
-  color: rgba(0,0,0,.54);
-  fill: rgba(0,0,0,.54);
+  color: rgba(0,0,0,.34);
+  fill: rgba(0,0,0,.34);
   font-family: "Lucida Grande";
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
   padding: 10px 0 25px 0;
   border-top: 1px solid rgba(0,0,0,.05);
+}
+
+.footer-links {
+  padding-right: 25px;
+}
+
+.footer-links:hover {
+  text-decoration: underline;
 }

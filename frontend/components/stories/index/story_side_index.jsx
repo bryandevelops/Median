@@ -85,14 +85,15 @@ const StorySideIndex = ({ stories }) => {
       </article>
 
       <footer className="side-index-footer">
-        Help&nbsp;&nbsp;&nbsp;&nbsp;
-        Status&nbsp;&nbsp;&nbsp;&nbsp;
-        Writers&nbsp;&nbsp;&nbsp;&nbsp;
-        Blog&nbsp;&nbsp;&nbsp;&nbsp;
-        Careers&nbsp;&nbsp;&nbsp;&nbsp;
-        Privacy&nbsp;&nbsp;&nbsp;&nbsp;
-        Terms&nbsp;&nbsp;&nbsp;&nbsp;
-        About
+        <a className="footer-links" href="#">Help</a>
+        <a className="footer-links" href="#">Status</a>
+        <a className="footer-links" href="#">Writers</a>
+        <a className="footer-links" href="#">Blog</a>
+        <br/>
+        <a className="footer-links" href="#">Careers</a>
+        <a className="footer-links" href="#">Privacy</a>
+        <a className="footer-links" href="#">Terms</a>
+        <a className="footer-links" href="#">About</a>
       </footer>
 
     </div>

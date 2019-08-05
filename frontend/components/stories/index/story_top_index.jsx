@@ -1,11 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GridLoader from 'react-spinners/GridLoader';
+import { css } from '@emotion/core';
+
+const override = css`
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 180px;
+`;
 
 const StoryTopIndex = ({ stories }) => {
   const topics = ["Arts & Entertainment", "Art", "Beauty", "Books", "Comics", "Culture", "Fiction", "Film", "Innovation & Tech", "Accessibility", "Android Dev", "Artificial Intelligence", "Blockchain", "Cryptocurrency", "Cybersecurity", "Data Science", "Life", "Addiction", "Cannabis", "Creativity", "Disability", "Family", "Fitness", "Society", "Basic Income", "Cities"]
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
   const days = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28"]
   const nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
+
+  if (!stories) {
+    return (
+      <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
+    )
+  }
+
   return(
     <>
     <header className="top-index-header">

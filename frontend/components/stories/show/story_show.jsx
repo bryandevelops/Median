@@ -28,9 +28,10 @@ class StoryShow extends React.Component {
       <img src={`${story.photo_url}`} alt="Photo" className="story-show-image"/> 
       : ""
 
-    const edit = currentUser.id === story.author_id ?
-      <button className="story-show-edit"><Link to={`/stories/${story.id}/edit`}>Update</Link></button>
-      : ""
+    let edit;
+    if (currentUser && currentUser.id === story.author_id) {
+      edit = <button className="story-show-edit"><Link to={`/stories/${story.id}/edit`}>Update</Link></button>
+    } else { "" }
 
     return(
       <>
@@ -47,7 +48,7 @@ class StoryShow extends React.Component {
 
             <header className="story-show-header">
               <Link to={`/users/${story.author_id}`}>
-                <h3 className="story-show-author">{users[story.author_id].fullname}</h3>
+                <h3 className="story-show-author">{story.author.fullname}</h3>
               </Link>
 
               <small className="story-show-date">

@@ -54,6 +54,10 @@
   margin: 4px 0 2px 0;
 }
 
+.story-show-author:hover {
+  text-decoration: underline;
+}
+
 .story-show-date {
   color: rgba(0,0,0,.54);
   fill: rgba(0,0,0,.54);
@@ -94,4 +98,16 @@
   letter-spacing: 0;
   font-size: 13px;
   line-height: 20px;
+
+
+  height: 37px;
+  padding: 0 16px;
+  text-align: center;
+  vertical-align: baseline;
+  text-align: center;
+}
+
+.story-show-edit:hover {
+  border-color: #018d68;
+  color: #018d68;
 }
