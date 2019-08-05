@@ -45,7 +45,7 @@ class UpdateStoryForm extends React.Component {
   }
 
   render() {
-    const { story, formType, processForm, currentUser, deleteStory } = this.props;
+    const { story, formType, processForm, currentUser, deleteStory, history } = this.props;
 
     if (!story) {
       return (
@@ -59,7 +59,8 @@ class UpdateStoryForm extends React.Component {
         formType={formType} 
         processForm ={processForm}
         deleteStory={deleteStory}
-        currentUser={currentUser}/>
+        currentUser={currentUser}
+        history={history}/>
     );
   }
 }

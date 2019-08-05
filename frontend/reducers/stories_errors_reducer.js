@@ -1,4 +1,4 @@
-import { RECEIVE_STORY_ERRORS, RECEIVE_STORY } from '../actions/story_actions';
+import { RECEIVE_STORY_ERRORS } from '../actions/story_actions';
 
 const storiesErrorsReducer = (oldState = [], action) => {
   Object.freeze(oldState);

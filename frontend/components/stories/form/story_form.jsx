@@ -25,7 +25,7 @@ class StoryForm extends React.Component {
 
   handleDelete(e) {
     e.preventDefault();
-    this.props.deleteStory(this.state.story.id).then(() => this.props.history.push(`/users/${this.props.currentUser.id}`))
+    this.props.deleteStory(this.props.story.id).then(() => this.props.history.push(`/users/${this.props.currentUser.id}`))
   }
 
   handleFile(e) {
@@ -68,4 +68,4 @@ class StoryForm extends React.Component {
   }
 }
 
-export default withRouter(StoryForm);
+export default StoryForm;
