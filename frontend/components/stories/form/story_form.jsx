@@ -25,7 +25,6 @@ class StoryForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    debugger
     const story = Object.assign({}, this.state);
     this.props.processForm(story).then(() => this.props.history.push(`/stories/${this.props.story.id}`))
   }
@@ -35,10 +34,10 @@ class StoryForm extends React.Component {
     this.props.deleteStory(this.props.story.id).then(() => this.props.history.push(`/users/${this.props.currentUser.id}`))
   }
 
-  handleFile(e) {
-    e.preventDefault();
-    this.setState({ photoFile: e.currentTarget.files[0] });
-  }
+  // handleFile(e) {
+  //   e.preventDefault();
+  //   this.setState({ photoFile: e.currentTarget.files[0] });
+  // }
 
   render() {
     const deleteButton = this.props.formType === "Edit story" ?
