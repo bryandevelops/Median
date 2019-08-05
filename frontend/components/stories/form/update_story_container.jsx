@@ -15,7 +15,6 @@ const override = css`
 
 const mapStateToProps = ({ sessions, entities: { users, stories } }, ownProps) => {
   // const defaultStory = { title: "", body: "" }
-  // debugger
   return({
     story: stories[ownProps.match.params.storyId],
     formType: "Edit story",

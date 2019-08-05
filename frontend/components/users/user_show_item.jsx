@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const UserShowItem = ({ story }) => {
+  const topics = ["Arts & Entertainment", "Art", "Beauty", "Books", "Comics", "Culture", "Fiction", "Film", "Innovation & Tech", "Accessibility", "Android Dev", "Artificial Intelligence", "Blockchain", "Cryptocurrency", "Cybersecurity", "Data Science", "Life", "Addiction", "Cannabis", "Creativity", "Disability", "Family", "Fitness", "Society", "Basic Income", "Cities"]
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
   const days = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28"]
   const nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
@@ -10,15 +11,15 @@ const UserShowItem = ({ story }) => {
     <div className="user-item-container">
       <header className="user-item-header">
         <div className="profile-pic">
-          <Link to={`/users/${story.author_id}`}>
+          <Link to={`/users/${story.author.id}`}>
             <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
           </Link>
         </div>
 
         <div className="user-item-info">
           <small className="user-item-author">
-            <Link to={`/users/${story.author_id}`}>
-              {story.author}
+            <Link to={`/users/${story.author.id}`}>
+              {story.author.fullname}
             </Link>
             &nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}
           </small>

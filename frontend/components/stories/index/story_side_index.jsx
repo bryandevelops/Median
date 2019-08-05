@@ -21,7 +21,7 @@ const StorySideIndex = ({ stories }) => {
           </Link>
 
           <Link to={`/users/${stories[0].author_id}`}>
-            <small className="side-index-author">{stories[0].author}&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}</small>
+            <small className="side-index-author">{stories[0].author.fullname}&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}</small>
           </Link>
 
           <small className="side-index-date">
@@ -39,7 +39,7 @@ const StorySideIndex = ({ stories }) => {
           </Link>
 
           <Link to={`/users/${stories[1].author_id}`}>
-            <small className="side-index-author">{stories[1].author}&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}</small>
+            <small className="side-index-author">{stories[1].author.fullname}&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}</small>
           </Link>
           
           <small className="side-index-date">
@@ -57,7 +57,7 @@ const StorySideIndex = ({ stories }) => {
           </Link>
 
           <Link to={`/users/${stories[2].author_id}`}>
-            <small className="side-index-author">{stories[2].author}&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}</small>
+            <small className="side-index-author">{stories[2].author.fullname}&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}</small>
           </Link>
 
           <small className="side-index-date">
@@ -75,7 +75,7 @@ const StorySideIndex = ({ stories }) => {
           </Link>
 
           <Link to={`/users/${stories[3].author_id}`}>
-            <small className="side-index-author">{stories[3].author}&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}</small>
+            <small className="side-index-author">{stories[3].author.fullname}&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}</small>
           </Link>
 
           <small className="side-index-date">

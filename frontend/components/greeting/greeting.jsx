@@ -14,8 +14,13 @@ const Greeting = ({ currentUser, logout, openModal, demoLogin }) => {
 
   const loggedIn = () => (
     <nav className="nav-2">
-      <h2 className="nav-user">{currentUser.fullname}</h2>
-      <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="{currentUser.fullname}" width="32" height="32"/>
+      <Link to={`/users/${currentUser.id}`}>
+        <h2 className="nav-user">{currentUser.fullname}</h2>
+      </Link>
+      
+      <Link to={`/users/${currentUser.id}`}>
+        <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="{currentUser.fullname}" width="32" height="32"/>
+      </Link>
       <button className="nav-logout" onClick={logout}>Log out</button>
     </nav>
   );

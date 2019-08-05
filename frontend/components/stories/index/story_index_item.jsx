@@ -19,7 +19,7 @@ const StoryIndexItem = ({ story }) => {
 
         <small className="story-index-item-author">
           <Link to={`/users/${story.author_id}`}>
-            {story.author} 
+            {story.author.fullname} 
           </Link>
           &nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}
         </small>

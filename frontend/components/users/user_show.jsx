@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import UserShowItem from './user_show_item';
 import GridLoader from 'react-spinners/GridLoader';
 import { css } from '@emotion/core';
 
@@ -11,15 +12,14 @@ const override = css`
 `;
 
 class UserShow extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  
   componentDidMount() {
     this.props.fetchUser(this.props.match.params.userId);
     window.scrollTo(0, 0);
   }
 
   componentDidUpdate(prevProps) {
+    debugger
     if (prevProps.user.id != this.props.match.params.userId) {
       this.props.fetchUser(this.props.match.params.userId);
     }
@@ -89,7 +89,7 @@ class UserShow extends React.Component {
           </div>
 
           <div className="user-show-header-right">
-            <Link to={`/users/${story.author_id}`}>
+            <Link to={`/users/${user.id}`}>
               <img className="profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
             </Link>
           </div>

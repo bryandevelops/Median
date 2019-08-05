@@ -19,7 +19,6 @@ class StoryForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const story = Object.assign({}, this.props.story);
-    // debugger
     this.props.processForm(story).then(() => this.props.history.push(`/stories/${this.props.story.id}`))
   }
 
