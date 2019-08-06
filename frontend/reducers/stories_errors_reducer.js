@@ -12,11 +12,3 @@ const storiesErrorsReducer = (oldState = [], action) => {
 };
 
 export default storiesErrorsReducer;
-
-/*
-case RECEIVE_STORY:
-      return [];
-Unsure about RECEIVE_STORY...but what I was thinking was if you first try to 
-publish an invalid story and errors render, if you successfully create one then
-the errors should be cleared.
-*/

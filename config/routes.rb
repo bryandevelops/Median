@@ -9,6 +9,6 @@ Rails.application.routes.draw do
       resources :responses, only: [:index]
     end
     resources :stories,  only: [:index, :show, :create, :update, :destroy]
-    resources :responses,  only: [:show, :create, :update, :destroy]
+    resources :responses,  only: [:index, :show, :create, :update, :destroy]
   end
 end
