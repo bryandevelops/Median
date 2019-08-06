@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: responses
+#
+#  id         :bigint           not null, primary key
+#  string     :text             not null
+#  author_id  :integer          not null
+#  story_id   :integer          not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class Response < ApplicationRecord
   validates :body, presence: true
 

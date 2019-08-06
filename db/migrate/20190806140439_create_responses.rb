@@ -7,7 +7,7 @@ class CreateResponses < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    add_index :author_id
-    add_index :story_id, unique: true
+    add_index :responses, :author_id
+    add_index :responses, :story_id
   end
 end
