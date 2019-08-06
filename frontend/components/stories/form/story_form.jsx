@@ -1,4 +1,5 @@
 import React from 'react';
+import { browerHistory } from 'react-router';
 import { withRouter } from 'react-router-dom';
 
 class StoryForm extends React.Component {
@@ -7,8 +8,8 @@ class StoryForm extends React.Component {
     this.state = {
       title: this.props.story.title || "",
       body: this.props.story.body || "",
-      photoFile: null,
-      photoUrl: null,
+      photoFile: this.props.photoFile || null,
+      photoUrl: this.props.photoUrl || null,
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
@@ -17,8 +18,13 @@ class StoryForm extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.value !== this.props.value) {
-      this.props.fetchStory(nextProps.match.params.storyId)
-      // .fail(err => this.props.history.push("/"));
+      this.props.fetchStory(nextProps.match.params.storyId).fail(err => this.props.history.push("/"));
+    }
+  }
+  
+  componentDidMount() {
+    if (this.props.formType === "Edit story" && !this.props.currentUser) {
+      this.props.history.push("/").fail(err => this.props.history.push("/"));
     }
   }
 
@@ -47,8 +53,8 @@ class StoryForm extends React.Component {
       data: formData,
       contentType: false,
       processData: false
-    }).then((story) => { 
-      this.props.history.push(`/stories/${story.id}`)});
+    }).then(() => { 
+      return this.props.history.push(`/users/${this.props.currentUser.id}`)});
 
 
     // const story = Object.assign({}, this.state.story);
@@ -81,9 +87,11 @@ class StoryForm extends React.Component {
 
     const preview = this.state.photoUrl ? <img className="story-form-preview" src={this.state.photoUrl}/> : ""
 
-    // if (this.props.currentUser && this.props.currentUser.id !== this.props.story.author_id) {
+    // if (this.props.currentUser && (this.props.currentUser.id !== this.props.story.author_id)) {
+    //   <>
     //   {this.props.history.push("/")}
-    //   return <></>
+    //   </>
+    //   // return <></>
     // }
 
     return(
@@ -107,7 +115,7 @@ class StoryForm extends React.Component {
               </label>
               <h3 className="story-form-preview">{preview}</h3>
 
-              <textarea value={this.state.body} onChange={this.update("body")} className="story-input-body" placeholder="Tell your story..." required/>
+              <textarea value={this.state.body} onChange={this.update("body")} className="story-input-body" placeholder="Tell your story..." cols="20" required></textarea>
           </form>
         </div>
       </>

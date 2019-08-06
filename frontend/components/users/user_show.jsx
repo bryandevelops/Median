@@ -32,18 +32,26 @@ class UserShow extends React.Component {
     if (nextProps.value !== this.props.value) {
       this.props.fetchUser(nextProps.match.params.userId).fail(err => this.props.history.push("/"));
     }
+    window.scrollTo(0, 0);
+
   }
 
   userContent() {
     const { user, stories } = this.props;
+    const userStories = stories.reverse().map(story => {
+      if (!user) {
+        return (
+          <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
+        )
+      }
 
-    const userStories = stories.map(story => {
-      if (user.id === story.author_id) {
+    if (user.id === story.author_id) {
         return <UserShowItem key={story.id} story={story} />
       }
     })
 
-    if (userStories.length > 0) {
+
+    if (userStories.length > 0 && userStories.every(story => typeof story !== "undefined")) {
       return(
         <div className="user-show-content">
           <h2 className="user-show-content-heading">Latest</h2>
@@ -67,7 +75,7 @@ class UserShow extends React.Component {
       '“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.” – Winston Churchill',
       '“Whether You Think You Can Or Think You Can’t, You’re Right.” – Henry Ford',
       '“You Learn More From Failure Than From Success. Don’t Let It Stop You. Failure Builds Character.” – Og Mandino',
-      '“It’s Not Whether You Get Knocked Down, It’s Whether You Get Up.” – Inspirational Quote By Vince Lombardi',
+      '“It’s Not Whether You Get Knocked Down, It’s Whether You Get Up.” – Vince Lombardi',
       '“If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.” – Steve Jobs',
       '“People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do.” – Rob Siltanen',
       '“Failure Will Never Overtake Me If My Determination To Succeed Is Strong Enough.” – Og Mandino',

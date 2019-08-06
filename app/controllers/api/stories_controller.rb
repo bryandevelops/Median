@@ -23,11 +23,11 @@ class Api::StoriesController < ApplicationController
   def update
     @story = current_user.stories.find(params[:id])
 
-    # if @story.update(story_params)
-    #   render "api/stories/show"
-    # else
-    #   render json: @story.errors.full_messages, status: 422
-    # end
+    if @story.update(story_params)
+      render "api/stories/show"
+    else
+      render json: @story.errors.full_messages, status: 422
+    end
   end
 
   def destroy

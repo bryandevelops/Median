@@ -81,6 +81,7 @@
   font-weight: 400;
   word-break: break-word;
   margin-bottom: 100px;
+  white-space: pre-line!important;
 }
 
 .story-show-edit {

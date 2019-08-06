@@ -160,7 +160,14 @@
   font-size: 13px ;
   line-height: 20px ;
 }
+*/
 
+.user-show-create:hover {
+  border-color: #018d68!important;
+  color: #018d68!important;
+}
+
+/*
 .user-show-create-container {
   display: flex;
   width: 900px;

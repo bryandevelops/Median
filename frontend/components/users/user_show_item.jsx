@@ -19,8 +19,8 @@ const UserShowItem = ({ story }) => {
             <small className="user-item-author">
               <Link to={`/users/${story.author.id}`}>
                 {story.author.fullname}
-              </Link>
               &nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}
+              </Link>
             </small>
 
             <small className="user-item-date">

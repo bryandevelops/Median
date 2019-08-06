@@ -32,6 +32,7 @@ class StoryIndex extends React.Component {
         <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
       )
     }
+    
     const mainStories = stories.slice(5).map(story => <StoryIndexItem key={story.id} story={story}/>);
     const topStories = <StoryTopIndex stories={stories.slice(0, 5)}/>
     const sideStories = <StorySideIndex stories={[stories[5], stories[14], stories[16], stories[18]]}/>
