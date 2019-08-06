@@ -27,6 +27,11 @@ class User < ApplicationRecord
     foreign_key: :author_id,
     class_name: 'Story'
 
+  has_many :responses,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: 'Response'
+
   def self.generate_session_token
     SecureRandom::urlsafe_base64
   end
