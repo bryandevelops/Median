@@ -69,6 +69,13 @@ class UserShow extends React.Component {
   }
 
   render() {
+
+    if (!this.props.user) {
+      return (
+        <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
+      )
+    }
+
     const { user, stories } = this.props;
     const quotes = [
       '“The Way Get Started Is To Quit Talking And Begin Doing.” – Walt Disney',
@@ -83,11 +90,6 @@ class UserShow extends React.Component {
       '“Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.” – Johann Wolfgang Von Goethe'
     ]
 
-    if (!user) {
-      return (
-        <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
-      )
-    }
 
     const userShowCreate = {
       alignSelf: "center",
