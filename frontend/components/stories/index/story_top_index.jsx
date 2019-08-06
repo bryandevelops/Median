@@ -16,8 +16,7 @@ const StoryTopIndex = ({ stories }) => {
   const days = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28"]
   const nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
 
-  if (!stories) {
-    
+  if (stories.length < 5 || stories.every(story => typeof story === "undefined")) {
     return (
       <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
     )
