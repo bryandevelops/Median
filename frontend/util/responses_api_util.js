@@ -20,7 +20,7 @@ export const createResponse = response => {
   return(
     $.ajax({
       method: "POST",
-      url: "/api/responses",
+      url: `/api/stories/${response.story_id}/responses`,
       data: { response },
     })
   );
@@ -30,17 +30,17 @@ export const updateResponse = response => {
   return(
     $.ajax({
       method: "PATCH",
-      url: `/api/responses/${response.id}`,
+      url: `/api/stories/${response.story_id}/responses/${response.id}`,
       data: { response },
     })
   );
 };
 
-export const deleteResponse = id => {
+export const deleteResponse = response => {
   return(
     $.ajax({
       method: "DELETE",
-      url: `/api/responses/${id}`,
+      url: `/api/stories/${response.story_id}/responses/${response.id}`,
     })
   );
 };

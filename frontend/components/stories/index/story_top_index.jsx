@@ -24,7 +24,6 @@ const StoryTopIndex = ({ stories }) => {
 
   if (stories.length === 0) return null
 
-
   return(
 
 

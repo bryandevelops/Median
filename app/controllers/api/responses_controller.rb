@@ -13,6 +13,7 @@ class Api::ResponsesController < ApplicationController
 
   def create
     @response = current_user.responses.new(response_params)
+    @response.story_id = params[:story_id]
 
     if @response.save
       render "api/responses/show"

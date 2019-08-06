@@ -22,7 +22,7 @@ export const receiveResponse = response => {
 export const removeResponse = response => {
   return({
     type: REMOVE_RESPONSE,
-    responseId: response.id
+    response
   })
 };
 
@@ -65,8 +65,8 @@ export const updateResponse = response => dispatch => {
   ))
 };
 
-export const deleteResponse = responseId => dispatch => {
-  return ResponseAPIUtil.deleteResponse(responseId).then(response => (
+export const deleteResponse = response => dispatch => {
+  return ResponseAPIUtil.deleteResponse(response).then(response => (
     dispatch(removeResponse(response))
   ), err => (
     dispatch(receiveErrors(err.responseJSON))

@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_140439) do
   end
 
   create_table "responses", force: :cascade do |t|
-    t.text "string", null: false
+    t.text "body", null: false
     t.integer "author_id", null: false
     t.integer "story_id", null: false
     t.datetime "created_at", null: false

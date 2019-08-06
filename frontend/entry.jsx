@@ -5,6 +5,7 @@ import configureStore from './store/store';
 
 // TESTING START
 import { fetchStories, fetchStory, createStory, updateStory, deleteStory } from './actions/story_actions';
+import { fetchResponses, fetchResponse, createResponse, updateResponse, deleteResponse } from './actions/response_actions';
 // TESTING END
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -30,9 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
   window.createStory = createStory;
   window.updateStory = updateStory;
   window.deleteStory = deleteStory;
-  // window.dispatch(createStory({ title: "test", body: "testinggg" }));
+  window.fetchResponses = fetchResponses;
+  window.fetchResponse = fetchResponse;
+  window.createResponse = createResponse;
+  window.updateResponse = updateResponse;
+  window.deleteResponse = deleteResponse;
   // TESTING END
-
 
   const root = document.getElementById("root");
   ReactDOM.render(<Root store={store}/>, root)
