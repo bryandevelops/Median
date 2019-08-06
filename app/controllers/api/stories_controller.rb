@@ -1,6 +1,6 @@
 class Api::StoriesController < ApplicationController
   before_action :require_logged_in, only: [:create, :update, :destroy]
-# 
+
   def index
     @stories = Story.all
     render "api/stories/index"
@@ -13,6 +13,7 @@ class Api::StoriesController < ApplicationController
 
   def create
     @story = current_user.stories.new(story_params)
+    
     if @story.save
       render "api/stories/show"
     else
