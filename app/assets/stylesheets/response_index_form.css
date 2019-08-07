@@ -1,0 +1,53 @@
+#response-form-input {
+  min-height: 38px;
+}
+
+#response-form-input:empty:not(:focus):after {
+  color: rgba(0,0,0,.40);
+  content: "Write a response...";
+  font-size: 24px;
+  display: block; /* For Firefox */
+  left: 0px;
+  position:relative;
+  top: 0px;
+}
+
+#response-form-input:empty:focus:after {
+  content: "Write a response...";
+  font-size: 24px;
+  display: block; /* For Firefox */
+  animation-duration: .3s;
+  animation-name: fadeOutUp;
+  animation-fill-mode: forwards;
+  margin-left: 150px;
+}
+
+.response-form-container:focus-within #response-form-input {
+  animation-name: growVertical;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+}
+
+.response-form-container:not(:focus-within) #response-form-input {
+  animation-name: growVertical;
+  animation-duration: .3s;
+  animation-fill-mode: reverse;
+  color: white;
+}
+
+
+
+.response-footer button {
+  margin: 0;
+  color: rgba(0,160,100,.9);
+  border: 1px solid white;
+}
+
+.response-form-container:focus-within button:hover {
+  margin: 0;
+  border: 1px solid white;
+  background-color: rgba(0,155,100,.3);
+  color: white;
+  transition-property: all;
+  transition-duration: .3s;
+}

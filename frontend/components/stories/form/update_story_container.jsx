@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 import { updateStory, fetchStory, deleteStory } from '../../../actions/story_actions';
 import StoryForm from './story_form';
 import GridLoader from 'react-spinners/GridLoader';

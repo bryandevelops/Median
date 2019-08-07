@@ -8,7 +8,7 @@ const mapStateToProps = ({ sessions, entities: { users, stories, responses } }, 
   return({
     responses: Object.values(responses) || {},
     story: stories[ownProps.match.params.storyId],
-    // storyId: ownProps.storyId,
+    // storyId: ownProps.match.params.storyId,
     currentUser: users[sessions.id],
   })
 };
