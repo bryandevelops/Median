@@ -1,17 +1,17 @@
-export const fetchResponses = () => {
+export const fetchResponses = storyId => {
   return(
     $.ajax({
       method: "GET",
-      url: "/api/responses",
+      url: `/api/stories/${storyId}/responses`,
     })
   );
 };
 
-export const fetchResponse = id => {
+export const fetchResponse = storyId => {
   return(
     $.ajax({
       method: "GET",
-      url: `/api/responses/${id}`,
+      url: `/api/responses/${storyId}`,
     })
   );
 };

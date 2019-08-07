@@ -33,16 +33,16 @@ export const receiveErrors = errors => {
   })
 };
 
-export const fetchResponses = () => dispatch => {
-  return ResponseAPIUtil.fetchResponses().then(responses => (
+export const fetchResponses = storyId => dispatch => {
+  return ResponseAPIUtil.fetchResponses(storyId).then(responses => (
     dispatch(receiveAllResponses(responses))
   ), err => (
     dispatch(receiveErrors(err.responseJSON))
   ))
 };
 
-export const fetchResponse = id => dispatch => {
-  return ResponseAPIUtil.fetchResponse(id).then(response => (
+export const fetchResponse = storyId => dispatch => {
+  return ResponseAPIUtil.fetchResponse(storyId).then(response => (
     dispatch(receiveResponse(response))
   ), err => (
     dispatch(receiveErrors(err.status))
