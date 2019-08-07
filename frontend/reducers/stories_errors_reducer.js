@@ -5,7 +5,7 @@ const storiesErrorsReducer = (oldState = [], action) => {
 
   switch (action.type) {
     case RECEIVE_STORY_ERRORS:
-      return action.errors;
+      return action.errors || null;
     default:
       return oldState;
   }

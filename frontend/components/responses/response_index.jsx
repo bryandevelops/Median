@@ -16,21 +16,26 @@ class ResponseIndex extends React.Component {
 
   render() {
     const { fetchResponses, createResponse, 
-      updateResponse, deleteResponse, 
+      updateResponse, deleteResponse, response,
       responses, story, currentUser } = this.props;
 
-    const storyResponses = responses ? responses.reverse().map(response => {
+      let storyResponses = responses.filter(response => response.story_id === story.id)
+
+      storyResponses = storyResponses.reverse().map(response => {
       return(
         <ResponseIndexItem 
           key={response.id}
           response={response}
+          story={story}
           currentUser={currentUser}
-          deleteResponse={deleteResponse} />
-      )}
-    ) : ""
+          deleteResponse={deleteResponse}
+          fetchResponses={fetchResponses} />
+      )})
+    
 
     const storyResponseForm = currentUser ? 
       <ResponseIndexForm
+        response={response}
         story={story}
         storyId={story.id}
         createResponse={createResponse}

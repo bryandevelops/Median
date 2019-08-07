@@ -306,6 +306,7 @@
 
 .response-form-body {
   margin-left: 24px;
+  margin-bottom: 24px;
   visibility: visible;
 }
 
@@ -333,5 +334,5 @@
 
 @keyframes growVertical {
   from { height: 38px;}
-  to { height: 60px; }
+  to { height: auto; }
 }

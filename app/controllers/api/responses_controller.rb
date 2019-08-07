@@ -12,10 +12,12 @@ class Api::ResponsesController < ApplicationController
   end
 
   def create
+
     @response = current_user.responses.new(response_params)
     @response.story_id = params[:story_id]
 
     if @response.save
+
       render "api/responses/show"
     else
       render json: @response.errors.full_messages, status: 422
@@ -34,7 +36,7 @@ class Api::ResponsesController < ApplicationController
 
   def destroy
     @response = Response.find(params[:id])
-
+    
     if @response
       @response.destroy
       render "api/responses/show"

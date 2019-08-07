@@ -6,6 +6,7 @@ import ResponseIndex from './response_index';
 const mapStateToProps = ({ sessions, entities: { users, stories, responses } }, ownProps) => {
   return({
     responses: Object.values(responses) || {},
+    response: { body: "", story_id: ownProps.match.params.storyId },
     story: stories[ownProps.match.params.storyId],
     // storyId: ownProps.match.params.storyId,
     currentUser: users[sessions.id],

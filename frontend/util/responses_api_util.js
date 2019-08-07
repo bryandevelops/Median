@@ -20,8 +20,8 @@ export const createResponse = response => {
   return(
     $.ajax({
       method: "POST",
-      url: `/api/stories/${response.story_id}/responses`,
-      data: { response },
+      url: `api/stories/${response.story_id}/responses`,
+      data: { 'response': response },
     })
   );
 };

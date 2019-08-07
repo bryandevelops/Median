@@ -9,6 +9,7 @@ import StoriesShowContainer from './stories/show/story_show_container';
 import CreateStoryContainer from './stories/form/create_story_container';
 import UpdateStoryContainer from './stories/form/update_story_container';
 import UserShowContainer from './users/user_show_container';
+import UpdateResponseContainer from './responses/update_response_container';
 
 const Median = () => {
   return (
@@ -25,6 +26,7 @@ const Median = () => {
         <Route exact path="/users/:userId" component={UserShowContainer}/>
         <ProtectedRoute exact path="/stories/new" component={CreateStoryContainer}/>
         <ProtectedRoute exact path="/stories/:storyId/edit" component={UpdateStoryContainer}/>
+        <ProtectedRoute exact path="/stories/:storyId/responses/:responseId/edit" component={UpdateResponseContainer}/>
         <Route exact path="/stories/:storyId" component={StoriesShowContainer}/>
         <Redirect to="/"/>
       </Switch>

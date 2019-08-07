@@ -17,6 +17,7 @@ class ResponseIndexForm extends React.Component {
   }
 
   handleInput(e) {
+    e.preventDefault();
     this.responseText = e.currentTarget.innerText;
   }
 
@@ -30,7 +31,7 @@ class ResponseIndexForm extends React.Component {
     if (this.responseText === "") { return; }
 
     const response = {
-      content: this.responseText,
+      body: this.responseText,
       story_id: this.props.storyId,
       author_id: this.props.currentUser.id
     };

@@ -5,7 +5,7 @@ const responseErrorsReducer = (oldState = [], action) => {
 
   switch (action.type) {
     case RECEIVE_RESPONSE_ERRORS:
-      return action.errors;
+      return action.errors || null;
     default:
       return oldState;
   }
