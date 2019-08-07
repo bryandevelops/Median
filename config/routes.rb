@@ -10,5 +10,6 @@ Rails.application.routes.draw do
       resources :responses, only: [:index, :create, :update, :destroy]
     end
     resources :responses,  only: [:show]
+    resources :follows, only: [:index, :create, :destroy]
   end
 end

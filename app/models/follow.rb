@@ -10,9 +10,6 @@
 #
 
 class Follow < ApplicationRecord
-  validates :follower_id, presence: true
-  validates :followee_id, presence: true
-
   belongs_to :follower,
     primary_key: :id,
     foreign_key: :follower_id,

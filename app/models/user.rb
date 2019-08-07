@@ -32,13 +32,28 @@ class User < ApplicationRecord
     foreign_key: :author_id,
     class_name: 'Response'
 
+
+
   has_many :follows
 
-  has_many :follower_relationships, foreign_key: :followee_id, dependent: :destroy, class_name: 'Follow'
-  has_many :followers, through: :follower_relationships, source: :follower
+  has_many :follower_relationships, 
+    primary_key: :id,
+    foreign_key: :follower_id, 
+    dependent: :destroy, 
+    class_name: 'Follow'
 
-  has_many :following_relationships, foreign_key: :follower_id, dependent: :destroy, class_name: 'Follow'
-  has_many :following, through: :following_relationships, source: :following
+  has_many :followees, 
+    through: :follower_relationships, 
+    source: :follower
+
+  has_many :followee_relationships, 
+    foreign_key: :followee_id, 
+    dependent: :destroy, 
+    class_name: 'Follow'
+
+  has_many :following,
+    through: :following_relationships, 
+    source: :following
 
   def follow(user)
     followers << user
