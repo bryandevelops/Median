@@ -67,8 +67,8 @@ class StoryShow extends React.Component {
             <p className="story-show-body">{story.body}</p>
           </div>
           
-          <ResponseIndexContainer/>
         </div>
+          <ResponseIndexContainer/>
       </>
     );
   }

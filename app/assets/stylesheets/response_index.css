@@ -1,0 +1,19 @@
+.response-index-container {
+  background: #fafafa!important;
+  
+}
+.response-index-feed {
+  margin: 0 auto;
+  width: 680px;
+}
+
+.response-index-heading {
+  padding: 20px 0;
+  letter-spacing: -0.32px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: rgba(0,0,0,.68);
+  fill: rgba(0, 0, 0, 0.68);
+  font-family: "Lucida Grande";
+}

@@ -1,53 +1,337 @@
-#response-form-input {
-  min-height: 38px;
+.response-index-form {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.50);
+  margin-bottom: 24px;
+  padding: 23px 0;
+  background-color: rgba(255, 255, 255, 1)
+}
+
+.response-item-profile-pic {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 24px 24px;
+  border-radius: 50%;
+  border-top: 2px solid #03a87c;
+  border-bottom: 2px solid #03a87c;
+}
+
+.response-item-profile-pic:hover {
+  border-top:  2px solid #0d8867;
+  border-bottom:  2px solid #0d8867;
+}
+
+.response-item-follow {
+  margin: 0 17px;
+  align-self: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  border-color: #03a87c;
+  color: #03a87c;
+  fill:  #03a87c;
+  white-space: normal;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  height: 20px;
+}
+
+.response-item-follow:hover {
+  border-color: #018d68;
+  color: #018d68;
+}
+
+
+.response-item-content {
+  display: flex;
+  height: 44px;
+}
+
+.response-item-author-info {
+  display: flex;
+}
+
+.response-item-author {
+  font-style: normal;
+  font-family: "Lucida Grande";
+  letter-spacing: 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400; 
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-bottom: 4px;
+}
+
+.response-item-author:hover {
+  text-decoration: underline;
+}
+
+.response-item-date {
+  color: rgba(0,0,0,.54);
+  fill: rgba(0,0,0,.54);
+  font-family: "Lucida Grande";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.response-item-body {
+  font-size: 18px;
+    line-height: 1.58;
+    letter-spacing: -.004em;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    margin: 0 24px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    word-break: break-word;
+}
+
+.response-item-buttons {
+  display: flex;
+  width: 625px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.response-item-delete {
+  align-self: center ;
+  border: 1px solid rgba(0,0,0,.15) ;
+  border-radius: 4px ;
+  border-color: #cc5454 ;
+  color:  #cc5454 ;
+  fill:  #cc5454 ;
+  white-space: normal ;
+  text-decoration: none ;
+  cursor: pointer ;
+  font-weight: 400 ;
+  font-style: normal ;
+  letter-spacing: 0 ;
+  font-size: 13px ;
+  line-height: 20px ;
+  margin-left: 50px ;
+}
+
+.response-item-delete:hover {
+  border-color: #973434;
+  color: #973434;
+}
+
+.response-item-edit {
+  align-self: center ;
+  border: 1px solid rgba(0,0,0,.15) ;
+  border-radius: 4px ;
+  border-color: #03a87c ;
+  color: #03a87c ;
+  fill:  #03a87c ;
+  white-space: normal;
+  text-decoration: none ;
+  cursor: pointer ;
+  font-weight: 400 ;
+  font-style: normal ;
+  letter-spacing: 0 ;
+  font-size: 13px ;
+  line-height: 20px;
+}
+
+.response-item-edit:hover {
+  border-color: #018d68;
+  color: #018d68;
+}
+
+.index-form-input{
+  display: flex;
+  flex-direction: row;
+}
+
+.index-form-profile-pic {
+  width: 40px;
+  height: 40px;
+  margin: 0 20px 24px 24px;
+  border-radius: 50%;
+  border-top: 2px solid #03a87c;
+  border-bottom: 2px solid #03a87c;
+}
+
+.index-form-profile-pic:hover {
+  border-top:  2px solid #0d8867;
+  border-bottom:  2px solid #0d8867;
 }
 
 #response-form-input:empty:not(:focus):after {
   color: rgba(0,0,0,.40);
   content: "Write a response...";
   font-size: 24px;
-  display: block; /* For Firefox */
-  left: 0px;
-  position:relative;
-  top: 0px;
+  display: flex; 
+  line-height: 1.58;
+  letter-spacing: -.004em;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #response-form-input:empty:focus:after {
   content: "Write a response...";
   font-size: 24px;
-  display: block; /* For Firefox */
+  display: flex; 
+  font-size: 18px;
+  line-height: 1.58;
+  letter-spacing: -.004em;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-weight: 400;
+  font-style: normal;
   animation-duration: .3s;
   animation-name: fadeOutUp;
   animation-fill-mode: forwards;
   margin-left: 150px;
 }
 
-.response-form-container:focus-within #response-form-input {
+.response-index-form:focus-within #response-form-input {
   animation-name: growVertical;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  font-size: 18px;
+  line-height: 1.58;
+  letter-spacing: -.004em;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.response-index-form:not(:focus-within) #response-form-input {
+  animation-name: growVertical;
+  animation-duration: .3s;
+  animation-fill-mode: reverse;
+  font-size: 18px;
+  line-height: 1.58;
+  letter-spacing: -.004em;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.response-footer button {
+  align-self: center ;
+  border: 1px solid rgba(0,0,0,.15) ;
+  border-radius: 4px ;
+  border-color: #03a87c ;
+  color: #03a87c ;
+  fill:  #03a87c ;
+  white-space: normal;
+  text-decoration: none ;
+  cursor: pointer ;
+  font-weight: 400 ;
+  font-style: normal ;
+  letter-spacing: 0 ;
+  font-size: 13px ;
+  line-height: 20px ;
+}
+
+.response-footer {
+  width: 625px;
+  margin: 0 auto;
+}
+
+.response-index-form:focus-within button:hover {
+  margin: 0;
+  border: 1px solid white;
+  background-color: rgba(0,155,100,.3);
+  border-color: #018d68;
+  color: #018d68;
+  transition-property: all;
+  transition-duration: .3s;
+}
+
+.response-index-form:focus-within button:active {
+  margin: 0;
+  border: 1px solid white;
+  background-color: rgba(0,155,100,.9);
+  color: white;
+  transition-property: all;
+  transition-duration: .3s;
+}
+
+.response-index-form h3 {
+  visibility: hidden;
+}
+
+.response-index-form button {
+  visibility: hidden;
+}
+
+.response-index-form:focus-within h3 {
+  visibility: visible;
+  font-style: normal;
+  font-family: "Lucida Grande";
+  letter-spacing: 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400; 
+  color: rgba(0,0,0,.84);
+  fill: rgba(0,0,0,.84);
+  margin-bottom: 4px;
+  animation-name: fadeInDown;
   animation-duration: .3s;
   animation-fill-mode: forwards;
 }
 
-.response-form-container:not(:focus-within) #response-form-input {
-  animation-name: growVertical;
+.response-index-form:focus-within button {
+  visibility: visible;
+  align-self: center ;
+  border: 1px solid rgba(0,0,0,.15) ;
+  border-radius: 4px ;
+  border-color: #03a87c ;
+  color: #03a87c ;
+  fill:  #03a87c ;
+  white-space: normal;
+  text-decoration: none ;
+  cursor: pointer ;
+  font-weight: 400 ;
+  font-style: normal ;
+  letter-spacing: 0 ;
+  font-size: 13px ;
+  line-height: 20px;
+  animation-name: fadeInUp;
   animation-duration: .3s;
-  animation-fill-mode: reverse;
-  color: white;
+  animation-fill-mode: forwards;
 }
 
-
-
-.response-footer button {
-  margin: 0;
-  color: rgba(0,160,100,.9);
-  border: 1px solid white;
+.response-form-body {
+  margin-left: 24px;
+  visibility: visible;
 }
 
-.response-form-container:focus-within button:hover {
-  margin: 0;
-  border: 1px solid white;
-  background-color: rgba(0,155,100,.3);
-  color: white;
-  transition-property: all;
-  transition-duration: .3s;
+@keyframes fadeOutUp {
+  from {
+    opacity: .3;
+    color: black;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -150px, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from { transform: translate3d(0, -200px, 0); opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translate3d(0, 200px, 0); opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes growVertical {
+  from { height: 38px;}
+  to { height: 60px; }
 }

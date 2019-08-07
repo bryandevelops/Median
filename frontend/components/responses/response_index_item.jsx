@@ -6,13 +6,20 @@ const ResponseIndexItem = ({ response, deleteResponse, currentUser }) => {
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
   const days = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28"]
 
-  const deleteButton = response.author_id === currentUser.id ?
-    <button className="response-item-delete" onClick={deleteResponse}>Delete</button>
-    : ""
 
   const followButton = currentUser && currentUser.id !== response.author_id ?
     <Link to="/"><button className="response-item-follow">Follow</button></Link>
     : ""
+
+  let deleteButton;
+  if (currentUser && currentUser.id === response.author_id) {
+    deleteButton = <button className="response-item-delete"><Link to={`/stories/${response.story_id}/responses/${response.id}`}>Delete</Link></button>
+  } else { "" }
+
+  let editButton;
+  if (currentUser && currentUser.id === response.author_id) {
+    editButton = <button className="response-item-edit"><Link to={`/stories/${response.story_id}/responses/${response.id}`}>Edit</Link></button>
+  } else { "" }
 
   return(
     <div className="response-item-container">
@@ -22,26 +29,30 @@ const ResponseIndexItem = ({ response, deleteResponse, currentUser }) => {
           <img className="response-item-profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
         </Link>
 
-        <header className="response-item-header">
-          <small className="response-item-author">
-            <Link to={`/users/${response.author.id}`}>
-              <h3>{response.author.fullname}</h3>
-              {followButton}
-            </Link>
-          </small>
+        <div className="response-item-info">
+          <small className="response-item-author-info">
+            <div className="response-item-author">
+              <Link to={`/users/${response.author.id}`}>
+                {response.author.fullname}
+              </Link>
+            </div>
+          {followButton}
+          </small>  
 
           <small className="response-item-date">
-            {months[Math.floor(Math.random() * months.length)]}&nbsp;{days[Math.floor(Math.random() * days.length)]}&nbsp;{date.getFullYear()}
+            {months[Math.floor(Math.random() * months.length)]}&nbsp;{days[Math.floor(Math.random() * days.length)]},&nbsp;{date.getFullYear()}
           </small>
-        </header>
+        </div>
       </div>
 
       <div className="response-item-body">
         {response.body}
       </div>
 
-      {deleteButton}
-    
+      <div className="response-item-buttons">
+        {editButton}
+        {deleteButton}
+      </div>
     </div>
   )
 }

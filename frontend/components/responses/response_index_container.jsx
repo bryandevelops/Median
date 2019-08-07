@@ -4,7 +4,6 @@ import { fetchResponses, fetchResponse, createResponse, updateResponse, deleteRe
 import ResponseIndex from './response_index';
 
 const mapStateToProps = ({ sessions, entities: { users, stories, responses } }, ownProps) => {
-  debugger
   return({
     responses: Object.values(responses) || {},
     story: stories[ownProps.match.params.storyId],

@@ -31,6 +31,7 @@ class ResponseIndex extends React.Component {
 
     const storyResponseForm = currentUser ? 
       <ResponseIndexForm
+        story={story}
         storyId={story.id}
         createResponse={createResponse}
         currentUser={currentUser} />
@@ -38,7 +39,7 @@ class ResponseIndex extends React.Component {
 
     return (
       <div className="response-index-container">
-      <section className="responses-index-feed">
+      <section className="response-index-feed">
         <h3 className="response-index-heading">Responses</h3>
 
         <div className="response-index-form-container">
