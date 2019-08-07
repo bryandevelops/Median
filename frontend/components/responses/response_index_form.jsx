@@ -57,7 +57,7 @@ class ResponseIndexForm extends React.Component {
             <img className="index-form-profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
           </Link>
 
-          <h3 className="index-form-author">{this.props.story.author.fullname}</h3>
+          <h3 className="index-form-author">{this.props.currentUser.fullname}</h3>
 
         </div>
           <div

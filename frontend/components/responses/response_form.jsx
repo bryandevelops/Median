@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
 class ResponseForm extends React.Component {
@@ -37,7 +38,7 @@ class ResponseForm extends React.Component {
     
     this.props.deleteResponse(this.props.response).then(() => this.props.history.push(`/stories/${this.state.story_id}`))
   }
-
+  
   render() {
     return(
     <>
@@ -51,15 +52,16 @@ class ResponseForm extends React.Component {
             <button className="response-edit-form-delete" onClick={this.handleDelete}>Delete story</button>
           </div>
 
-          {/* <h6 className="response-edit-form-title">Title</h6>
-          <input type="text" value={this.state.title} onChange={this.update("title")} className="response-edit-input-title" placeholder="Title" required /> */}
+          <Link to={`/stories/${this.props.response.story.id}`}>
+            <div className="response-edit-story-info-container">
+              <section className="response-edit-story-info">
+                <h3 className="response-edit-title">{this.props.response.story.title}</h3>
+                  <h3 className="response-edit-body">Get back to reading?</h3>
+              </section>
+            </div>
+          </Link>
 
-          {/* <label className="file-upload"><img src="https://median-aa-seeds.s3.amazonaws.com/plus.png" />
-            <input type="file" className="response-edit-input-file" onChange={this.handleFile} required />
-          </label>
-          <h3 className="response-edit-form-preview">{preview}</h3> */}
-
-          <textarea value={this.state.body} onChange={this.update("body")} className="response-edit-input-body" placeholder="Tell your story..." cols="20" required></textarea>
+          <textarea value={this.state.body} onChange={this.update("body")} className="response-edit-input-body" placeholder="Write a response" cols="20" required></textarea>
         </form>
       </div>
     </>

@@ -13,11 +13,12 @@ const override = css`
     top: 180px;
 `;
 
-const mapStateToProps = ({ sessions, entities: { users, responses } }, ownProps) => {
+const mapStateToProps = ({ sessions, entities: { users, stories, responses } }, ownProps) => {
   return({
     response: responses[ownProps.match.params.responseId],
     formType: "Edit response",
-    currentUser: users[sessions.id],    
+    currentUser: users[sessions.id],
+    story: stories[ownProps.match.params.storyId],
   })
 };
 
@@ -43,8 +44,7 @@ class UpdateResponseForm extends React.Component {
   }
 
   render() {
-    const { response, formType, processForm, currentUser, deleteResponse } = this.props;
-
+    const { response, formType, processForm, currentUser, deleteResponse, story } = this.props;
     if (!response) {
       return (
         <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
@@ -57,7 +57,8 @@ class UpdateResponseForm extends React.Component {
         formType={formType}
         processForm={processForm}
         deleteResponse={deleteResponse}
-        currentUser={currentUser}/>
+        currentUser={currentUser}
+        story={story} />
     );
   }
 }
