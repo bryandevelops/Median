@@ -49,7 +49,7 @@ class ResponseForm extends React.Component {
 
           <div id="response-edit-form-submit">
             <input className="response-edit-form-edit" type="submit" value={this.props.formType} />
-            <button className="response-edit-form-delete" onClick={this.handleDelete}>Delete story</button>
+            <button className="response-edit-form-delete" onClick={this.handleDelete}>Delete response</button>
           </div>
 
           <Link to={`/stories/${this.props.response.story.id}`}>
