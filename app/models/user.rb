@@ -32,36 +32,34 @@ class User < ApplicationRecord
     foreign_key: :author_id,
     class_name: 'Response'
 
-
-
-  has_many :follows
-
-  has_many :follower_relationships, 
+  has_many :follows, # Instances of the current_user following other User
     primary_key: :id,
-    foreign_key: :follower_id, 
-    dependent: :destroy, 
-    class_name: 'Follow'
+    foreign_key: :follower_id,
+    class_name: 'Follow',
+    dependent: :destroy
 
-  has_many :followees, 
-    through: :follower_relationships, 
+  has_many :subscriptions, # The Users that current_user follows
+    through: :follows,
+    source: :followee,
+    dependent: :destroy
+
+  has_many :followings, # Instances of the current_user being followed
+    primary_key: :id,
+    foreign_key: :followee_id,
+    class_name: 'Follow',
+    dependent: :destroy
+
+  has_many :subscribers, # The Users the follow current_user
+    through: :followings,
     source: :follower
 
-  has_many :followee_relationships, 
-    foreign_key: :followee_id, 
-    dependent: :destroy, 
-    class_name: 'Follow'
+  # def follow(user)
+  #   followers << user
+  # end
 
-  has_many :following,
-    through: :following_relationships, 
-    source: :following
-
-  def follow(user)
-    followers << user
-  end
-
-  def unfollow(user)
-    followers.delete(user)
-  end
+  # def unfollow(user)
+  #   followers.delete(user)
+  # end
 
   def self.generate_session_token
     SecureRandom::urlsafe_base64
