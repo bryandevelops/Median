@@ -17,7 +17,7 @@ class ResponseIndex extends React.Component {
   render() {
     const { fetchResponses, createResponse, 
       updateResponse, deleteResponse, response,
-      responses, story, currentUser } = this.props;
+      responses, story, currentUser, user } = this.props;
 
       let storyResponses = responses.filter(response => response.story_id === story.id)
 
@@ -29,7 +29,8 @@ class ResponseIndex extends React.Component {
           story={story}
           currentUser={currentUser}
           deleteResponse={deleteResponse}
-          fetchResponses={fetchResponses} />
+          fetchResponses={fetchResponses}
+          user={user} />
       )})
     
 

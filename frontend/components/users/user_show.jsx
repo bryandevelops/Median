@@ -153,7 +153,7 @@ class UserShow extends React.Component {
               <div className="user-show-header-quote">
                 <small className="user-show-quote-title">Quote of the Day:</small>
                 <div className="user-show-quote-body">{quotes[Math.floor(Math.random() * quotes.length)]}</div>
-                <small className="user-show-followers">Following&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Followers&nbsp;&nbsp;&nbsp;</small>
+                <small className="user-show-followers">{this.props.user.subscription_count} Following&nbsp;&nbsp;&#183;&nbsp;&nbsp;{this.props.user.subscriber_count} Followers&nbsp;&nbsp;&nbsp;</small>
               </div>
             </div>
 

@@ -30,13 +30,13 @@ class Api::UsersController < ApplicationController
   def subscriptions
     @user = User.find(params[:id])
     @subs = @user.subscriptions
-    render :subs
+    render "api/users/subs"
   end
 
     def subscribers
     @user = User.find(params[:id])
     @subs = @user.subscribers
-    render :subs
+    render "api/users/subs"
   end
 
   private 
