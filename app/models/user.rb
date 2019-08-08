@@ -53,14 +53,6 @@ class User < ApplicationRecord
     through: :followings,
     source: :follower
 
-  # def follow(user)
-  #   followers << user
-  # end
-
-  # def unfollow(user)
-  #   followers.delete(user)
-  # end
-
   def self.generate_session_token
     SecureRandom::urlsafe_base64
   end

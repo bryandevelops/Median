@@ -25,6 +25,7 @@
   margin-right: 16px; 
   border-width: 0;
   color: #03a87c;
+  fill:  #03a87c ;
   padding: 0;
   text-align: left;
   vertical-align: baseline;
@@ -46,6 +47,7 @@
   border-radius: 4px;
   border-color: #03a87c;
   color: #03a87c;
+  fill:  #03a87c ;
   text-align: center;
   vertical-align: baseline;
   white-space: normal;
@@ -64,8 +66,9 @@
   padding: 0 16px;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: 4px;
-  border-color: #03a87c;
-  color: #03a87c;
+  border-color: #cc5454 ;
+  color:  #cc5454 ;
+  fill:  #cc5454 ;
   text-align: center;
   vertical-align: baseline;
   white-space: normal;
@@ -97,19 +100,21 @@
 .nav-login:hover {
   border-color: #018d68;
   color: #018d68;
+  fill:  #018d68;
   cursor: pointer;
 }
 
 .nav-signup:hover {
   border-color: #018d68;
   color: #018d68;
+  fill:  #018d68;
   cursor: pointer;
-  
 }
 
 .nav-logout:hover {
-  border-color: #018d68;
-  color: #018d68;
+  border-color: #973434;
+  color: #973434;
+  fill:  #973434 ;
   cursor: pointer;
 }
 

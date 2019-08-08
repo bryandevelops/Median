@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import UserShowItem from './user_show_item';
+import FollowButton from '../follow/follow_button';
 import GridLoader from 'react-spinners/GridLoader';
 import { css } from '@emotion/core';
 
@@ -128,7 +129,8 @@ class UserShow extends React.Component {
 
     const followButton = this.props.currentUser && this.props.currentUser.id !== this.props.user.id ?
       <>
-        <Link to="/"><button className="user-show-follow">Follow</button></Link>
+        {/* <Link to="/"><button className="user-show-follow">Follow</button></Link> */}
+        <FollowButton user={this.props.user}/>
         <img className="user-show-arrow" src="https://median-aa-seeds.s3.amazonaws.com/down-arrow.png" alt="Icon" />
       </>
       : ""

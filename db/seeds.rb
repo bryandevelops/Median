@@ -715,3 +715,9 @@ User.create!(
   email: "guest_user@testing.com",
   password: "password"
 )
+
+User.create!(
+  fullname: "Spencer Tassone",
+  email: "spencerwilliamtassone@gmail.com",
+  password: "password"
+)

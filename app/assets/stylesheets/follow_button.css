@@ -1,0 +1,47 @@
+.Follow {
+  margin: 0 17px;
+  align-self: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  border-color: #03a87c;
+  color: #03a87c;
+  fill:  #03a87c;
+  white-space: normal;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  height: 20px;
+}
+
+.Follow:hover {
+  border-color: #018d68;
+  color: #018d68;
+  fill:  #018d68;
+}
+
+.Unfollow {
+  margin: 0 17px;
+  align-self: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  border-color: #cc5454 ;
+  color:  #cc5454 ;
+  fill:  #cc5454 ;
+  white-space: normal;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 13px;
+  height: 20px;
+}
+
+.Unfollow:hover {
+  border-color: #973434;
+  color: #973434;
+  fill:  #973434 ;
+}

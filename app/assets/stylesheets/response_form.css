@@ -39,6 +39,7 @@
 .response-edit-form-delete:hover {
   border-color: #973434;
   color: #973434;
+  fill:  #973434 ;
 }
 
 .response-edit-form-edit {
@@ -61,6 +62,7 @@
 .response-edit-form-edit:hover {
   border-color: #018d68;
   color: #018d68;
+  fill:  #018d68 ;
 }
 
 .response-edit-input-body {
