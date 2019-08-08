@@ -38,7 +38,7 @@
   width: 400px;
 }
 
-.user-show-follow {
+/* .user-show-follow {
   margin: 0 17px;
   align-self: center;
   border: 1px solid rgba(0,0,0,.15);
@@ -59,7 +59,7 @@
 .user-show-follow:hover {
   border-color: #018d68;
   color: #018d68;
-}
+} */
 
 .user-show-profile-pic {
   width: 128px;
