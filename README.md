@@ -1,24 +1,18 @@
-# README
+# Median
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Median is a Medium application clone that allows users to publish their own stories. Whether amateur or professional, short or extended, Median is the perfect hub for any form of social journalism.
 
-Things you may want to cover:
+## Technologies
 
-* Ruby version
+For the Frontend, Median uses a combination of React for the Framework, Redux for State Management, and ES6 JavaScript to generate a single-page experience for the User. On the Backend it uses the Ruby on Rails framework for Data Management. Lastly, jQuery was used to generate all the AJAX requests to the Backend.
 
-* System dependencies
+## Features
 
-* Configuration
+* User Authentication
+* Stories (Posts)
+* Responses (Commenting on Stories)
+* Follows and Feed
+* Claps (Likes)
 
-* Database creation
+### User Authentication
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
