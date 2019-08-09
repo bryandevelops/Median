@@ -39,7 +39,7 @@ For the Frontend, Median uses a combination of React for the Framework, Redux fo
 * When logged in, users are able to leave a 'response' under any published story
 * Users can update or delete any of their published responses
 
-![response](https://github.com/bryandevelops/Median/blob/master/app/assets/images/readme_images/response.jpeg)
+![response](https://github.com/bryandevelops/Median/blob/master/app/assets/images/readme_images/response.png)
 
 ### Follows and Feed
 
