@@ -462,9 +462,51 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 1,
+  author_id: 2,
+  story_id: 1,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 1,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 1,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 1,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
   story_id: 2,
 )
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 2,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 2,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 2,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 2,
+)
+
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 1,
@@ -472,19 +514,107 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 1,
+  author_id: 2,
+  story_id: 3,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 3,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 3,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 3,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
   story_id: 4,
 )
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 4,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 4,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 4,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 4,
+)
+
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 1,
   story_id: 5,
 )
-
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 2,
+  story_id: 5,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 5,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 5,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 5,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
   story_id: 6,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 6,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 6,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 6,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 6,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 7,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -493,8 +623,50 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 2,
+  author_id: 3,
+  story_id: 7,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 7,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 7,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
   story_id: 8,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 8,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 8,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 8,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 8,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 9,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -503,10 +675,56 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 2,
+  author_id: 3,
+  story_id: 9,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 9,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 9,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 10,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 10,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 10,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 10,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
   story_id: 10,
 )
 
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 11,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 11,
+)
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 3,
@@ -514,8 +732,50 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 3,
+  author_id: 4,
+  story_id: 11,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 11,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
   story_id: 12,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 12,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 12,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 12,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 12,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 13,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 13,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -524,19 +784,107 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 3,
+  author_id: 4,
+  story_id: 13,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 13,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
   story_id: 14,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 14,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 14,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 14,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 14,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 15,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 15,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 3,
   story_id: 15,
 )
-
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 4,
+  story_id: 15,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 15,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
   story_id: 16,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 16,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 16,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 16,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 16,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 17,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 17,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 17,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -545,8 +893,50 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 4,
+  author_id: 5,
+  story_id: 17,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
   story_id: 18,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 18,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 18,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 18,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 18,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 19,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 19,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 19,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -555,29 +945,159 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 4,
+  author_id: 5,
+  story_id: 19,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 20,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 20,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 20,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 20,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
   story_id: 20,
 )
 
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 5,
+  author_id: 1,
+  story_id: 21,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 21,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 21,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
   story_id: 21,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 5,
+  story_id: 21,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
   story_id: 22,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 22,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 22,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 22,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 22,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 23,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 23,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 23,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 23,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 5,
   story_id: 23,
 )
+
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 5,
+  author_id: 6,
   story_id: 24,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 24,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 24,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 24,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 24,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 25,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 25,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 25,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 25,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -592,9 +1112,51 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 6,
+  author_id: 7,
+  story_id: 26,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 26,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 26,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 26,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
   story_id: 27,
 )
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 27,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 27,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 27,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 27,
+)
+
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 6,
@@ -602,19 +1164,107 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 6,
+  author_id: 7,
+  story_id: 28,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 28,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 28,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 28,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
   story_id: 29,
 )
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 29,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 29,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 29,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 29,
+)
+
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 6,
   story_id: 30,
 )
-
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 7,
+  story_id: 30,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 30,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 30,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 30,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
   story_id: 31,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 31,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 31,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 31,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 31,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 32,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -623,8 +1273,50 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 7,
+  author_id: 8,
+  story_id: 32,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 32,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 32,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
   story_id: 33,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 33,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 33,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 33,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 33,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 34,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -633,10 +1325,56 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 7,
+  author_id: 8,
+  story_id: 34,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 34,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 34,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 35,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 35,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 35,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 35,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
   story_id: 35,
 )
 
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 36,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 36,
+)
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 8,
@@ -644,8 +1382,50 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 8,
+  author_id: 9,
+  story_id: 36,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 36,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
   story_id: 37,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 37,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 37,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 37,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 37,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 38,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 38,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -654,19 +1434,107 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 8,
+  author_id: 9,
+  story_id: 38,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 38,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
   story_id: 39,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 39,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 39,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 39,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 39,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 40,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 40,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 8,
   story_id: 40,
 )
-
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 9,
+  story_id: 40,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 10,
+  story_id: 40,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
   story_id: 41,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 41,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 41,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 41,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 41,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 42,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 42,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 42,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -675,8 +1543,50 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 9,
+  author_id: 10,
+  story_id: 42,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
   story_id: 43,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 43,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 43,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 43,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 43,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 44,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 44,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 44,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
@@ -685,29 +1595,159 @@ Response.create!(
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 9,
+  author_id: 10,
+  story_id: 44,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
+  story_id: 45,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 45,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 45,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 45,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
   story_id: 45,
 )
 
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 10,
+  author_id: 6,
+  story_id: 46,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 46,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 46,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
   story_id: 46,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 10,
+  story_id: 46,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 1,
   story_id: 47,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 47,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 47,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 47,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 47,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 48,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 48,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 48,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 48,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
   author_id: 10,
   story_id: 48,
 )
+
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
-  author_id: 10,
+  author_id: 1,
   story_id: 49,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 2,
+  story_id: 49,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 3,
+  story_id: 49,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 4,
+  story_id: 49,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 5,
+  story_id: 49,
+)
+
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 6,
+  story_id: 50,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 7,
+  story_id: 50,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 8,
+  story_id: 50,
+)
+Response.create!(
+  body: Faker::TvShows::Seinfeld.quote,
+  author_id: 9,
+  story_id: 50,
 )
 Response.create!(
   body: Faker::TvShows::Seinfeld.quote,
