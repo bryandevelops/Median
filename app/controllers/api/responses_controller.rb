@@ -2,7 +2,7 @@ class Api::ResponsesController < ApplicationController
   before_action :require_logged_in, only: [:create, :update, :destroy]
 
   def index
-    @responses = Response.all
+    @responses = Response.all.includes(:author, :story)
     render "api/responses/index"
   end
 
