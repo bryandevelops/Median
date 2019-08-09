@@ -1,12 +1,7 @@
 json.partial! "api/users/user", user: @user
-# json.users do
-#   json.id @user.id
-#   json.full_name @user.full_name
-#   json.email @user.email
-#   json.following current_user.subscriptions.include?(@user) if logged_in?
-  json.subscriber_count @user.subscribers.count
-  json.subscription_count @user.subscriptions.count
-# end
+
+json.subscriber_count @user.subscribers.count
+json.subscription_count @user.subscriptions.count
 
 json.stories do
   @user.stories.each do |story|

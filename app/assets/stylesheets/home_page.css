@@ -7,6 +7,30 @@
   font-weight: 600;
 }
 
+.icons {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.fa-linkedin {
+  font-size: 1.9em;
+  padding-right: 16px;
+}
+
+.fa-github-square {
+  font-size: 1.9em;
+  padding-right: 16px;
+}
+
+.bryan-santos {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -83,9 +107,9 @@
 }
 
 .nav-user {
-  font-family: "Lucida Grande";;
+  font-family: 'Roboto', sans-serif;
   margin-right: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .nav-user:hover {

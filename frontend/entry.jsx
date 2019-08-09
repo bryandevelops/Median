@@ -6,6 +6,7 @@ import configureStore from './store/store';
 // TESTING START
 import { fetchStories, fetchStory, createStory, updateStory, deleteStory } from './actions/story_actions';
 import { fetchResponses, fetchResponse, createResponse, updateResponse, deleteResponse } from './actions/response_actions';
+import { fetchUser } from './actions/user_actions';
 // TESTING END
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.createResponse = createResponse;
   window.updateResponse = updateResponse;
   window.deleteResponse = deleteResponse;
+  window.fetchUser = fetchUser;
   // TESTING END
 
   const root = document.getElementById("root");

@@ -1,8 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import FollowButton from '../follow/follow_button';
-
 
 class ResponseIndexItem extends React.Component {
   constructor(props) {
@@ -25,9 +23,9 @@ class ResponseIndexItem extends React.Component {
   
 
   // const followButton = currentUser && currentUser.id !== response.author_id ?
-  //   // <Link to="/"><button className="response-item-follow">Follow</button></Link>
-  //   <FollowButton user={response.author_id} />
-  //   : ""
+    // <Link to="/"><button className="response-item-follow">Follow</button></Link>
+    // <FollowButton user={response.author_id} />
+    // : ""
 
   let deleteButton;
   if (currentUser && currentUser.id === response.author_id) {
