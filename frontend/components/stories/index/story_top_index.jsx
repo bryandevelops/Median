@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const StoryTopIndex = ({ stories }) => {
-  const topics = ["Arts & Entertainment", "Art", "Beauty", "Books", "Comics", "Culture", "Fiction", "Film", "Innovation & Tech", "Accessibility", "Android Dev", "Artificial Intelligence", "Blockchain", "Cryptocurrency", "Cybersecurity", "Data Science", "Life", "Addiction", "Cannabis", "Creativity", "Disability", "Family", "Fitness", "Society", "Basic Income", "Cities"]
+  // const topics = ["Arts & Entertainment", "Art", "Beauty", "Books", "Comics", "Culture", "Fiction", "Film", "Innovation & Tech", "Accessibility", "Android Dev", "Artificial Intelligence", "Blockchain", "Cryptocurrency", "Cybersecurity", "Data Science", "Life", "Addiction", "Cannabis", "Creativity", "Disability", "Family", "Fitness", "Society", "Basic Income", "Cities"]
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
   const nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
   let date = new Date()
@@ -44,7 +44,7 @@ const StoryTopIndex = ({ stories }) => {
             </Link>
 
             <Link to={`/users/${stories[0].author_id}`}>
-              <small className="top-index-author">{stories[0].author.fullname}&nbsp;in&nbsp;{topics[0]}</small>
+              <small className="top-index-author">{stories[0].author.fullname}{/*&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}*/}</small>
             </Link>
 
             <small className="top-index-date">
@@ -67,7 +67,7 @@ const StoryTopIndex = ({ stories }) => {
               </Link>
 
               <Link to={`/users/${stories[1].author_id}`}>
-                <small className="top-index-author">{stories[1].author.fullname}&nbsp;in&nbsp;{topics[1]}</small>
+                <small className="top-index-author">{stories[1].author.fullname}{/*&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}*/}</small>
               </Link>
 
               <small className="top-index-date">
@@ -89,7 +89,7 @@ const StoryTopIndex = ({ stories }) => {
               </Link>
 
               <Link to={`/users/${stories[2].author_id}`}>
-                <small className="top-index-author">{stories[2].author.fullname}&nbsp;in&nbsp;{topics[2]}</small>
+                <small className="top-index-author">{stories[2].author.fullname}{/*&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}*/}</small>
               </Link>
 
               <small className="top-index-date">
@@ -111,7 +111,7 @@ const StoryTopIndex = ({ stories }) => {
               </Link>
 
               <Link to={`/users/${stories[3].author_id}`}>
-                <small className="top-index-author">{stories[3].author.fullname}&nbsp;in&nbsp;{topics[3]}</small>
+                <small className="top-index-author">{stories[3].author.fullname}{/*&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}*/}</small>
               </Link>
 
               <small className="top-index-date">
@@ -134,7 +134,7 @@ const StoryTopIndex = ({ stories }) => {
           </Link>
 
           <Link to={`/users/${stories[4].author_id}`}>
-            <small className="top-index-author">{stories[4].author.fullname}&nbsp;in&nbsp;{topics[4]}</small>
+            <small className="top-index-author">{stories[4].author.fullname}{/*&nbsp;in&nbsp;{topics[Math.floor(Math.random() * topics.length)]}*/}</small>
           </Link>
 
           <small className="top-index-date">
