@@ -1,6 +1,4 @@
 import React from 'react';
-import { browerHistory } from 'react-router';
-import { withRouter } from 'react-router-dom';
 
 class StoryForm extends React.Component {
   constructor(props) {
@@ -54,11 +52,8 @@ class StoryForm extends React.Component {
       contentType: false,
       processData: false
     }).then(() => { 
-      return this.props.history.push(`/users/${this.props.currentUser.id}`)});
-
-
-    // const story = Object.assign({}, this.state.story);
-    // this.props.processForm(story).then(() => this.props.history.push(`/stories/${this.props.story.id}`))
+      return this.props.history.push(`/users/${this.props.currentUser.id}`)
+    });
   }
 
   handleDelete(e) {
@@ -82,18 +77,11 @@ class StoryForm extends React.Component {
 
   render() {
     const deleteButton = this.props.formType === "Edit story" ?
-    <button className="story-form-delete" onClick={this.handleDelete}>Delete story</button>
-    : ""
+      <button className="story-form-delete" onClick={this.handleDelete}>Delete story</button>
+      : ""
 
     const preview = this.state.photoUrl ? <img className="story-form-preview" src={this.state.photoUrl}/> : ""
-
-    // if (this.props.currentUser && (this.props.currentUser.id !== this.props.story.author_id)) {
-    //   <>
-    //   {this.props.history.push("/")}
-    //   </>
-    //   // return <></>
-    // }
-
+    
     return(
       <>
         <div className="story-box-shadow"></div>

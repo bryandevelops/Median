@@ -51,30 +51,27 @@ class ResponseIndexForm extends React.Component {
 
     return(
       <div className="response-index-form">
-
         <div className="index-form-input">
           <Link to={`/users/${this.props.currentUser.id}`}>
             <img className="index-form-profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
           </Link>
 
           <h3 className="index-form-author">{this.props.currentUser.fullname}</h3>
-
         </div>
-          <div
-            id="response-form-input"
-            className="response-form-body"
-            contentEditable="true"
-            onPaste={this.handlePaste}
-            onInput={this.handleInput.bind(this)}>
-          </div>
+
+        <div
+          id="response-form-input"
+          className="response-form-body"
+          contentEditable="true"
+          onPaste={this.handlePaste}
+          onInput={this.handleInput.bind(this)}>
+        </div>
 
         <div className="response-footer">
             <button onClick={this.handleSubmit.bind(this)}>Publish</button>
         </div>
-
       </div>
     )
-
   }
 }
 

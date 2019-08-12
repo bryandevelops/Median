@@ -38,21 +38,19 @@ class StoryIndex extends React.Component {
     const topStories = <StoryTopIndex stories={stories.slice(0, 5)}/>
     const sideStories = <StorySideIndex stories={[stories[5], stories[14], stories[16], stories[18]]}/>
     
-    
-    
     return(
       <div className="story-index-container">
         {topStories}
         
-      <section className="parent">
-        <div className="bottom-left">
-          {mainStories}
-        </div> 
+        <section className="parent">
+          <div className="bottom-left">
+            {mainStories}
+          </div> 
 
-        <div className="bottom-right">
-          {sideStories}
-        </div> 
-      </section>
+          <div className="bottom-right">
+            {sideStories}
+          </div> 
+        </section>
       </div>
     );
   }

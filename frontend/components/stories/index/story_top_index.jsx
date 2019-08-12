@@ -14,19 +14,19 @@ const StoryTopIndex = ({ stories }) => {
   return(
     <>
       <header className="top-index-header">
-          <a id="selected" href="#">HOME</a>
-          <a href="#">ONEZERO</a>
-          <a href="#">ELEMENTAL</a>
-          <a href="#">GEN</a>
-          <a href="#">ZORA</a>
-          <a href="#">FORGE</a>
-          <a href="#">HUMAN PARTS</a>
-          <a href="#">STARTUPS</a>
-          <a href="#">SELF</a>
-          <a href="#">TECH</a>
-          <a href="#">HEATED</a>
-          <a href="#">MODUS</a>
-          <a href="#">MORE</a>
+        <a id="selected" href="#">HOME</a>
+        <a href="#">ONEZERO</a>
+        <a href="#">ELEMENTAL</a>
+        <a href="#">GEN</a>
+        <a href="#">ZORA</a>
+        <a href="#">FORGE</a>
+        <a href="#">HUMAN PARTS</a>
+        <a href="#">STARTUPS</a>
+        <a href="#">SELF</a>
+        <a href="#">TECH</a>
+        <a href="#">HEATED</a>
+        <a href="#">MODUS</a>
+        <a href="#">MORE</a>
       </header>
 
       <div className="story-top-index-container">
@@ -48,7 +48,7 @@ const StoryTopIndex = ({ stories }) => {
             </Link>
 
             <small className="top-index-date">
-              {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[3]}&nbsp;min&nbsp;read&nbsp;&#9733;
+              {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[4]}&nbsp;min&nbsp;read&nbsp;&#9733;
             </small>
           </div>
         </article>
@@ -71,7 +71,7 @@ const StoryTopIndex = ({ stories }) => {
               </Link>
 
               <small className="top-index-date">
-                  {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[5]}&nbsp;min&nbsp;read&nbsp;&#9733;
+                  {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[4]}&nbsp;min&nbsp;read&nbsp;&#9733;
               </small>
             </div>
           </section>
@@ -93,7 +93,7 @@ const StoryTopIndex = ({ stories }) => {
               </Link>
 
               <small className="top-index-date">
-                {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[9]}&nbsp;min&nbsp;read&nbsp;&#9733;                    
+                {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[4]}&nbsp;min&nbsp;read&nbsp;&#9733;                    
               </small>
             </div>
           </section>
@@ -115,7 +115,7 @@ const StoryTopIndex = ({ stories }) => {
               </Link>
 
               <small className="top-index-date">
-                {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[7]}&nbsp;min&nbsp;read&nbsp;&#9733;                    
+                {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[4]}&nbsp;min&nbsp;read&nbsp;&#9733;                    
               </small>
             </div>
           </section>

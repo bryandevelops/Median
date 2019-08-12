@@ -41,14 +41,7 @@ class SessionForm extends React.Component {
   }
 
   render() {
-
-    let nameInput = this.props.formType === "Sign up" ?
-      <>
-        <label className="login-label">Full Name</label>
-        <input type="text" value={this.state.fullname} onChange={this.update('fullname')} className="login-input" />
-      </> : ""
     let fullnameInput;
-
     if (this.props.formType === "Sign up") {
       fullnameInput = this.props.errors.includes("Fullname can't be blank") ?
         <>
@@ -64,8 +57,6 @@ class SessionForm extends React.Component {
       fullnameInput = ""
     }
     
-    
-
     const emailInput = this.props.errors.includes("Email can't be blank") && this.props.formType === "Sign up" ?
       <>
         <label className="login-label-error">{this.props.errors[this.props.errors.indexOf("Email can't be blank")]}</label>
@@ -88,9 +79,6 @@ class SessionForm extends React.Component {
         <input type="password" value={this.state.password} onChange={this.update('password')} className="login-input" />
       </>
     
-
-    
-
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
@@ -100,16 +88,12 @@ class SessionForm extends React.Component {
         
           <p className="form-description">{this.props.formDescription}</p>
         
-          
-          {this.renderErrors()}
-         
+          {this.renderErrors()} 
 
           <div className="login-form">
-
             {fullnameInput}
             {emailInput}
             {passwordInput}
-
             <div id="modal-submit"><input className="sessions-submit" type="submit" value={this.props.formType} /></div>
           </div>
 

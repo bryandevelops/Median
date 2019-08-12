@@ -45,6 +45,7 @@ class UpdateResponseForm extends React.Component {
 
   render() {
     const { response, formType, processForm, currentUser, deleteResponse, story } = this.props;
+    
     if (!response) {
       return (
         <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>

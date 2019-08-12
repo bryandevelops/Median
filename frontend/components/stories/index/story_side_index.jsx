@@ -26,7 +26,7 @@ const StorySideIndex = ({ stories }) => {
           </Link>
 
           <small className="side-index-date">
-            {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[13]}&nbsp;min&nbsp;read&nbsp;&#9733;
+            {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[4]}&nbsp;min&nbsp;read&nbsp;&#9733;
           </small>
         </div>
       </article>
@@ -44,7 +44,7 @@ const StorySideIndex = ({ stories }) => {
           </Link>
           
           <small className="side-index-date">
-            {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[5]}&nbsp;min&nbsp;read&nbsp;&#9733;
+            {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[4]}&nbsp;min&nbsp;read&nbsp;&#9733;
           </small>
         </div>
       </article>
@@ -62,7 +62,7 @@ const StorySideIndex = ({ stories }) => {
           </Link>
 
           <small className="side-index-date">
-            {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[9]}&nbsp;min&nbsp;read&nbsp;&#9733;
+            {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[4]}&nbsp;min&nbsp;read&nbsp;&#9733;
           </small>
         </div>
       </article>
@@ -80,7 +80,7 @@ const StorySideIndex = ({ stories }) => {
           </Link>
 
           <small className="side-index-date">
-            {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[6]}&nbsp;min&nbsp;read&nbsp;&#9733;
+            {months[month]}&nbsp;{day}&nbsp;&#183;&nbsp;{nums[4]}&nbsp;min&nbsp;read&nbsp;&#9733;
           </small>
         </div>
       </article>

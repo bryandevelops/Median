@@ -10,12 +10,6 @@ class ResponseForm extends React.Component {
     this.handleDelete = this.handleDelete.bind(this);
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.value !== this.props.value) {
-  //     this.props.
-  //   }
-  // }
-
   componentDidMount() {
     if (!this.props.currentUser) {
       this.props.history.push("/").fail(err => this.props.history.push("/"));
@@ -35,7 +29,6 @@ class ResponseForm extends React.Component {
 
   handleDelete(e) {
     e.preventDefault();
-    
     this.props.deleteResponse(this.props.response).then(() => this.props.history.push(`/stories/${this.state.story_id}`))
   }
   
@@ -56,7 +49,7 @@ class ResponseForm extends React.Component {
             <div className="response-edit-story-info-container">
               <section className="response-edit-story-info">
                 <h3 className="response-edit-title">{this.props.response.story.title}</h3>
-                  <h3 className="response-edit-body">Get back to reading?</h3>
+                <h3 className="response-edit-body">Get back to reading?</h3>
               </section>
             </div>
           </Link>

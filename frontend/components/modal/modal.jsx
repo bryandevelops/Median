@@ -5,11 +5,10 @@ import LoginFormContainer from '../session_form/login_form_container';
 import SignupFormContainer from '../session_form/signup_form_container';
 
 function Modal({ modal, closeModal }) {
-  if (!modal) {
-    return null;
-  }
+  if (!modal) {return null}
   let component;
   let componentClassName;
+
   switch (modal) {
     case 'Log in':
       component = <LoginFormContainer />;
@@ -22,6 +21,7 @@ function Modal({ modal, closeModal }) {
     default:
       return null;
   }
+  
   return (
     <div className="modal-background" onClick={closeModal}>
       <div className={componentClassName} onClick={e => e.stopPropagation()}>

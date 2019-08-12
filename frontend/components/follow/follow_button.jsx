@@ -44,6 +44,7 @@ class FollowButton extends React.Component {
       this.props.user.id === this.props.currentUser.id) {
       return <div></div>;
     }
+
     return (
       <button
         className={this.followStatus()}
@@ -53,7 +54,5 @@ class FollowButton extends React.Component {
     );
   }
 }
-
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(FollowButton);

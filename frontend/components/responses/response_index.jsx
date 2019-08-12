@@ -3,7 +3,6 @@ import ResponseIndexItem from './response_index_item';
 import ResponseIndexForm from './response_index_form';
 
 class ResponseIndex extends React.Component {
-
   componentDidMount() {
     this.props.fetchResponses(this.props.story.id)
   }
@@ -16,12 +15,12 @@ class ResponseIndex extends React.Component {
 
   render() {
     const { fetchResponses, createResponse, 
-      updateResponse, deleteResponse, response,
-      responses, story, currentUser, user } = this.props;
+      deleteResponse, response, responses, 
+      story, currentUser, user 
+    } = this.props;
 
-      let storyResponses = responses.filter(response => response.story_id === story.id)
-
-      storyResponses = storyResponses.reverse().map(response => {
+    let storyResponses = responses.filter(response => response.story_id === story.id)
+    storyResponses = storyResponses.reverse().map(response => {
       return(
         <ResponseIndexItem 
           key={response.id}
@@ -31,8 +30,8 @@ class ResponseIndex extends React.Component {
           deleteResponse={deleteResponse}
           fetchResponses={fetchResponses}
           user={user} />
-      )})
-    
+      )
+    })
 
     const storyResponseForm = currentUser ? 
       <ResponseIndexForm
@@ -45,17 +44,17 @@ class ResponseIndex extends React.Component {
 
     return (
       <div className="response-index-container">
-      <section className="response-index-feed">
-        <h3 className="response-index-heading">Responses</h3>
+        <section className="response-index-feed">
+          <h3 className="response-index-heading">Responses</h3>
 
-        <div className="response-index-form-container">
-          {storyResponseForm}
-        </div>
+          <div className="response-index-form-container">
+            {storyResponseForm}
+          </div>
 
-        <div className="response-index-item-container">
-          {storyResponses}
-        </div>
-      </section>
+          <div className="response-index-item-container">
+            {storyResponses}
+          </div>
+        </section>
       </div>
     )
   }

@@ -13,7 +13,6 @@ const override = css`
 `;
 
 class UserShow extends React.Component {
-  
   componentDidMount() {
     this.props.fetchUser(this.props.match.params.userId).fail(err => this.props.history.push("/"));
     window.scrollTo(0, 0);
@@ -23,9 +22,6 @@ class UserShow extends React.Component {
     if (prevProps.match.params.userId != this.props.match.params.userId) {
       this.props.fetchUser(this.props.match.params.userId).fail(err => this.props.history.push("/"));
     }
-    // if (prevProps.user.storyIds != this.props.user.storyIds) {
-    //   this.props.user.storyIds.forEach(id => this.props.fetchStory(id));
-    // }
     window.scrollTo(0, 0);
   }
 
@@ -34,23 +30,19 @@ class UserShow extends React.Component {
       this.props.fetchUser(nextProps.match.params.userId).fail(err => this.props.history.push("/"));
     }
     window.scrollTo(0, 0);
-
   }
 
   userContent() {
     const { user, stories } = this.props;
     const userStories = stories.reverse().map(story => {
       if (!user) {
-        return (
-          <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
-        )
+        return <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
       }
 
-    if (user.id === story.author_id) {
+      if (user.id === story.author_id) {
         return <UserShowItem key={story.id} story={story} />
       }
     })
-
 
     if (userStories.length > 0 && userStories.every(story => typeof story !== "undefined")) {
       return(
@@ -72,12 +64,11 @@ class UserShow extends React.Component {
   render() {
 
     if (!this.props.user) {
-      return (
-        <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
-      )
+      return <div className="story-index-loading"><GridLoader css={override} sizeUnit={"px"} size={20} /></div>
     }
 
     const { user, stories } = this.props;
+
     const quotes = [
       '“The Way Get Started Is To Quit Talking And Begin Doing.” – Walt Disney',
       '“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.” – Winston Churchill',
@@ -90,7 +81,6 @@ class UserShow extends React.Component {
       '“We May Encounter Many Defeats But We Must Not Be Defeated.” – Maya Angelou',
       '“Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.” – Johann Wolfgang Von Goethe'
     ]
-
 
     const userShowCreate = {
       alignSelf: "center",
@@ -129,7 +119,6 @@ class UserShow extends React.Component {
 
     const followButton = this.props.currentUser && this.props.currentUser.id !== this.props.user.id ?
       <>
-        {/* <Link to="/"><button className="user-show-follow">Follow</button></Link> */}
         <FollowButton user={this.props.user} fetchUser={this.props.fetchUser} />
         <img className="user-show-arrow" src="https://median-aa-seeds.s3.amazonaws.com/down-arrow.png" alt="Icon" />
       </>
@@ -142,7 +131,6 @@ class UserShow extends React.Component {
         {createButton}
 
         <div className="user-show-container">
-
           <header className="user-show-header">
             <div className="user-show-header-left">
               <div className="user-show-header-left-content">
@@ -151,14 +139,14 @@ class UserShow extends React.Component {
               </div>
 
               <div className="user-show-header-quote">
-                <small className="user-show-quote-title">Quote of the Day:</small>
+                <small className="user-show-quote-title">Inspirational Quote:</small>
                 <div className="user-show-quote-body">{quotes[Math.floor(Math.random() * quotes.length)]}</div>
-                  <small className="user-show-followers">{this.props.user.subscription_count || "0"} Following&nbsp;&nbsp;&#183;&nbsp;&nbsp;{this.props.user.subscriber_count || "0"} Followers&nbsp;&nbsp;&nbsp;</small>
+                <small className="user-show-followers">{this.props.user.subscription_count || "0"} Following&nbsp;&nbsp;&#183;&nbsp;&nbsp;{this.props.user.subscriber_count || "0"} Followers&nbsp;&nbsp;&nbsp;</small>
               </div>
             </div>
 
             <div className="user-show-header-right">
-                <img className="user-show-profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
+              <img className="user-show-profile-pic" src="https://median-aa-seeds.s3.amazonaws.com/profile_pic.jpg" alt="Photo" width="48" height="48" />
             </div>
           </header>
 
