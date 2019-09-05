@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_07_181600) do
+ActiveRecord::Schema.define(version: 2019_08_22_164322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,19 @@ ActiveRecord::Schema.define(version: 2019_08_07_181600) do
     t.string "checksum", null: false
     t.datetime "created_at", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "claps", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "story_id", null: false
+    t.integer "response_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["response_id"], name: "index_claps_on_response_id"
+    t.index ["story_id"], name: "index_claps_on_story_id"
+    t.index ["user_id", "response_id"], name: "index_claps_on_user_id_and_response_id", unique: true
+    t.index ["user_id", "story_id"], name: "index_claps_on_user_id_and_story_id", unique: true
+    t.index ["user_id"], name: "index_claps_on_user_id"
   end
 
   create_table "follows", force: :cascade do |t|

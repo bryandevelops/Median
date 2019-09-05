@@ -25,12 +25,14 @@ class User < ApplicationRecord
   has_many :stories,
     primary_key: :id,
     foreign_key: :author_id,
-    class_name: 'Story'
+    class_name: 'Story',
+    dependent: :destroy
 
   has_many :responses,
     primary_key: :id,
     foreign_key: :author_id,
-    class_name: 'Response'
+    class_name: 'Response',
+    dependent: :destroy
 
   has_many :follows, # Instances of the current_user following other User
     primary_key: :id,
@@ -51,7 +53,14 @@ class User < ApplicationRecord
 
   has_many :subscribers, # The Users the follow current_user
     through: :followings,
-    source: :follower
+    source: :follower,
+    dependent: :destroy
+
+  has_many :claps,
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: 'Clap',
+    dependent: :destroy
 
   def self.generate_session_token
     SecureRandom::urlsafe_base64
