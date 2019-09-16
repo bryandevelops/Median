@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get 'api/users/:id/subscribers', to: 'api/users#subscribers', defaults: {format: :json}
   get 'api/users/:id/subscriptions', to: 'api/users#subscriptions', defaults: {format: :json}
 
+  post 'api/stories/:id/clap', to: 'api/stories#clap', defaults: {format: :json}
+  delete 'api/stories/:id/clap', to: 'api/stories#unclap', defaults: {format: :json}
+  get 'api/stories/:id/total_claps', to: 'api/stories#total_claps', defaults: {format: :json}
+
   namespace :api, defaults: {format: :json} do
     resource :sessions, only: [:create, :destroy]
     resources :users, only: [:create, :show]

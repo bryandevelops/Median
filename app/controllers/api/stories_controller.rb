@@ -42,6 +42,24 @@ class Api::StoriesController < ApplicationController
     end
   end
 
+  def clap
+    @user = current_user
+    @clapped = Story.find(params[:id])
+    @clapped.total_claps << current_user if @clapped
+  end
+
+  def unclap
+    @user = current_user
+    @clapped = Story.find(params[:id])
+    @clapped.total_claps << current_user if @clapped
+  end
+
+  def total_claps
+    @user = User.find(params[:id])
+    @subs = @user.total_claps
+    render "api/stories/subs"
+  end
+
   private
 
   def story_params

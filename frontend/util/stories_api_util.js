@@ -44,3 +44,30 @@ export const deleteStory = id => {
     })
   );
 };
+
+export const fetchClaps = id => {
+  return(
+    $.ajax({
+      method: "GET",
+      url: `/api/stories/${id}/total_claps`,
+    })
+  );
+};
+
+export const clapStory = id => {
+  return(
+    $.ajax({
+      method: "POST",
+      url: `/api/stories/${id}/clap`,
+    })
+  );
+};
+
+export const unclapStory = id => {
+  return(
+    $.ajax({
+      method: "DELETE",
+      url: `/api/stories/${id}/clap`,
+    })
+  )
+}

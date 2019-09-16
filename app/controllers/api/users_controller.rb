@@ -33,7 +33,7 @@ class Api::UsersController < ApplicationController
     render "api/users/subs"
   end
 
-    def subscribers
+  def subscribers
     @user = User.find(params[:id])
     @subs = @user.subscribers
     render "api/users/subs"
