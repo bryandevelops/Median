@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ResponseIndexContainer from '../../responses/response_index_container';
+import ClapButton from '../../clap/clap_button';
 
 class StoryShow extends React.Component {
   componentDidMount() {
@@ -64,6 +65,7 @@ class StoryShow extends React.Component {
 
           <div className="story-show-body-container">
             <p className="story-show-body">{story.body}</p>
+            <ClapButton story={story} />
           </div>
         </div>
 

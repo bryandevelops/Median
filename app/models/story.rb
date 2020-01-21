@@ -29,5 +29,10 @@ class Story < ApplicationRecord
     foreign_key: :story_id,
     class_name: 'Clap'
 
+  # has_many :claps,
+  #   through: :author,
+  #   source: :claps,
+  #   dependent: :destroy
+    
   has_one_attached :photo
 end

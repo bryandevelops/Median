@@ -23,8 +23,8 @@ class Response < ApplicationRecord
     foreign_key: :story_id,
     class_name: 'Story'
 
-  has_many :claps,
-    primary_key: :id,
-    foreign_key: :response_id,
-    class_name: 'Clap'
+  # has_many :claps,
+  #   primary_key: :id,
+  #   foreign_key: :response_id,
+  #   class_name: 'Clap'
 end

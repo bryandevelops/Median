@@ -39,12 +39,9 @@ ActiveRecord::Schema.define(version: 2019_08_22_164322) do
   create_table "claps", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "story_id", null: false
-    t.integer "response_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["response_id"], name: "index_claps_on_response_id"
     t.index ["story_id"], name: "index_claps_on_story_id"
-    t.index ["user_id", "response_id"], name: "index_claps_on_user_id_and_response_id", unique: true
     t.index ["user_id", "story_id"], name: "index_claps_on_user_id_and_story_id", unique: true
     t.index ["user_id"], name: "index_claps_on_user_id"
   end

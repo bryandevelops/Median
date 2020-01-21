@@ -1,4 +1,4 @@
-import { RECEIVE_ALL_STORIES, RECEIVE_STORY, REMOVE_STORY } from '../actions/story_actions';
+import { RECEIVE_ALL_STORIES, RECEIVE_STORY, REMOVE_STORY, RECEIVE_CLAP, REMOVE_CLAP, RECEIVE_TOTAL_CLAPS } from '../actions/story_actions';
 import { RECEIVE_USER } from '../actions/user_actions';
 import merge from 'lodash/merge';
 
@@ -18,6 +18,14 @@ const storiesReducer = (oldState = {}, action) => {
       return newState;
     case RECEIVE_USER:
       return action.user.stories;
+    case RECEIVE_CLAP:
+      newState = merge({}, oldState, { [action.id]: { clapped: true } });
+      return newState;
+    case REMOVE_CLAP:
+      newState = merge({}, oldState, { [action.id]: { clapped: false } });
+    case RECEIVE_TOTAL_CLAPS:
+      newState = merge({}, oldState, action.stories,
+        { [action.id]: { total_claps: action.claps } });
     default:
       return oldState;
   }
