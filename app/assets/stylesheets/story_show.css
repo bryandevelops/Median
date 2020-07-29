@@ -104,11 +104,15 @@
   text-align: center;
   vertical-align: baseline;
   text-align: center;
+  background: white;
 }
 
 .story-show-edit:hover {
   border-color: #018d68;
   color: #018d68;
+  background-color: rgba(0,155,100,.3);
+  transition-property: all;
+  transition-duration: .3s;
 }
 
 .story-show-profile-pic {

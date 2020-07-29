@@ -162,9 +162,16 @@
 }
 */
 
+.user-show-create {
+  background: white;
+}
+
 .user-show-create:hover {
   border-color: #018d68!important;
   color: #018d68!important;
+  background-color: rgba(0,155,100,.3);
+  transition-property: all;
+  transition-duration: .3s;
 }
 
 /*

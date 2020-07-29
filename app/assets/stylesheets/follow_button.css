@@ -14,12 +14,16 @@
   letter-spacing: 0;
   font-size: 13px;
   height: 20px;
+  background: white;
 }
 
 .Follow:hover {
   border-color: #018d68;
   color: #018d68;
   fill:  #018d68;
+  background-color: rgba(0,155,100,.3);
+  transition-property: all;
+  transition-duration: .3s;
 }
 
 .Unfollow {
@@ -38,10 +42,14 @@
   letter-spacing: 0;
   font-size: 13px;
   height: 20px;
+  background: white;
 }
 
 .Unfollow:hover {
   border-color: #973434;
   color: #973434;
   fill:  #973434 ;
+  background-color: rgba(228, 0, 0, 0.3);
+  transition-property: all;
+  transition-duration: .3s;
 }

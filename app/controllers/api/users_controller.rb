@@ -18,7 +18,6 @@ class Api::UsersController < ApplicationController
   def follow
     @user = current_user
     @followee = User.find(params[:id])
-    debugger
     @followee.subscribers << current_user if @followee
   end
 

@@ -65,7 +65,7 @@ class StoryShow extends React.Component {
 
           <div className="story-show-body-container">
             <p className="story-show-body">{story.body}</p>
-            <ClapButton story={story} />
+            {/* <ClapButton story={story} /> */}
           </div>
         </div>
 

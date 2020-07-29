@@ -119,11 +119,15 @@
   font-size: 13px ;
   line-height: 20px ;
   margin-left: 50px ;
+  background: white;
 }
 
 .response-item-delete:hover {
   border-color: #973434;
   color: #973434;
+  background-color: rgba(228, 0, 0, 0.3);
+  transition-property: all;
+  transition-duration: .3s;
 }
 
 .response-item-edit {
@@ -141,11 +145,18 @@
   letter-spacing: 0 ;
   font-size: 13px ;
   line-height: 20px;
+  background: white;
 }
 
 .response-item-edit:hover {
   border-color: #018d68;
   color: #018d68;
+  background-color: rgba(0,155,100,.3);
+  transition-property: all;
+  transition-duration: .3s;
+  background-color: rgba(0,155,100,.3);
+  transition-property: all;
+  transition-duration: .3s;
 }
 
 .index-form-input{
@@ -234,6 +245,7 @@
   letter-spacing: 0 ;
   font-size: 13px ;
   line-height: 20px ;
+  background: white;
 }
 
 .response-footer {
@@ -244,9 +256,9 @@
 .response-index-form:focus-within button:hover {
   margin: 0;
   border: 1px solid white;
-  background-color: rgba(0,155,100,.3);
   border-color: #018d68;
   color: #018d68;
+  background-color: rgba(0,155,100,.3);
   transition-property: all;
   transition-duration: .3s;
 }

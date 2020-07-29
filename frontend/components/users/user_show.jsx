@@ -110,19 +110,19 @@ class UserShow extends React.Component {
       position: "sticky",
       top: "0"
     }
-
     const createButton = this.props.currentUser && this.props.currentUser.id === this.props.user.id ?
-      <div className="user-show-create-container" style={userShowContainer}>
+    <div className="user-show-create-container" style={userShowContainer}>
         <Link to="/stories/new"><button className="user-show-create" style={userShowCreate}>Publish</button></Link>
       </div>
       : ""
-
-    const followButton = this.props.currentUser && this.props.currentUser.id !== this.props.user.id ?
+      
+      const followButton = this.props.currentUser && this.props.currentUser.id !== this.props.user.id ?
       <>
         <FollowButton user={this.props.user} fetchUser={this.props.fetchUser} />
         <img className="user-show-arrow" src="https://median-aa-seeds.s3.amazonaws.com/down-arrow.png" alt="Icon" />
       </>
       : ""
+      
 
       return(
       <>

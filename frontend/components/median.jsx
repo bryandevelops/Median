@@ -18,8 +18,8 @@ const Median = () => {
       <header className="header">
         <Link to="/"><h1 className="header-logo">Median</h1></Link>
         <div className="icons">
-          <a href="https://www.linkedin.com/in/bryandevelops/"><i className="fab fa-linkedin"></i></a>
-          <a href="https://github.com/bryandevelops"><i className="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/bryandevelops/" target="_blank"><i className="fab fa-linkedin"></i></a>
+          <a href="https://github.com/bryandevelops" target="_blank"><i className="fab fa-github-square"></i></a>
           <a href="mailto:bryan0147@gmail.com" className="bryan-santos">by Bryan Santos</a>
         </div>
         <GreetingContainer />

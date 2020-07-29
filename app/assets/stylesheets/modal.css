@@ -267,6 +267,7 @@
   font-size: 13px;
   line-height: 20px;
   text-align: center;
+  background: white;
 }
 .small-footer-link:hover {
   border-color: #018d68;

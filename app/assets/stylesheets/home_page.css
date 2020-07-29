@@ -46,12 +46,14 @@
 }
 
 .nav-login {
-  margin-right: 16px; 
-  border-width: 0;
+  height: 37px;
+  padding: 0 16px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  border-color: #03a87c;
   color: #03a87c;
-  fill:  #03a87c ;
-  padding: 0;
-  text-align: left;
+  fill: #03a87c;
+  text-align: center;
   vertical-align: baseline;
   white-space: normal;
   text-decoration: none;
@@ -62,6 +64,7 @@
   font-size: 13px;
   line-height: 20px;
   text-align: center;
+  background: white;
 }
 
 .nav-signup {
@@ -83,6 +86,7 @@
   font-size: 13px;
   line-height: 20px;
   text-align: center;
+  background: white;
 }
 
 .nav-logout {
@@ -104,6 +108,7 @@
   font-size: 13px;
   line-height: 20px;
   text-align: center;
+  background: white;
 }
 
 .nav-user {
@@ -126,6 +131,9 @@
   color: #018d68;
   fill:  #018d68;
   cursor: pointer;
+  background-color: rgba(0,155,100,.3);
+  transition-property: all;
+  transition-duration: .3s;
 }
 
 .nav-signup:hover {
@@ -133,6 +141,9 @@
   color: #018d68;
   fill:  #018d68;
   cursor: pointer;
+  background-color: rgba(0,155,100,.3);
+  transition-property: all;
+  transition-duration: .3s;
 }
 
 .nav-logout:hover {
@@ -140,6 +151,9 @@
   color: #973434;
   fill:  #973434 ;
   cursor: pointer;
+  background-color: rgba(228, 0, 0, 0.3);
+  transition-property: all;
+  transition-duration: .3s;
 }
 
 .greeting-profile-pic {
@@ -155,11 +169,14 @@
 }
 
 .nav-demo {
-  margin-left: 16px; 
-  border-width: 0;
+  height: 37px;
+  padding: 0 16px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  border-color: #03a87c;
   color: #03a87c;
-  padding: 0;
-  text-align: left;
+  fill: #03a87c;
+  text-align: center;
   vertical-align: baseline;
   white-space: normal;
   text-decoration: none;
@@ -170,9 +187,13 @@
   font-size: 13px;
   line-height: 20px;
   text-align: center;
+  background: white;
 }
 
 .nav-demo:hover {
   border-color: #018d68;
   color: #018d68;
+  background-color: rgba(0,155,100,.3);
+  transition-property: all;
+  transition-duration: .3s;
 }
