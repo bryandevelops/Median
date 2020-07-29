@@ -17,7 +17,6 @@ const storiesReducer = (oldState = {}, action) => {
       delete newState[action.storyId]
       return newState;
     case RECEIVE_USER:
-      // debugger
       return action.user;
     case RECEIVE_CLAP:
       newState = merge({}, oldState, { [action.id]: { clapped: true } });
