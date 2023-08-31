@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: Median_production
+  database: Median_development
   username: Median
   password: <%= ENV['MEDIAN_DATABASE_PASSWORD'] %>
